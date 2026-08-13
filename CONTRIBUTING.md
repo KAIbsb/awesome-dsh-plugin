@@ -19,6 +19,22 @@ Thank you for helping maintain Awesome DSH Plugin.
 node scripts/update.mjs
 ```
 
-提交前请确认 `README.md`、`README_EN.md` 与 `data/repositories.json` 一并更新。
+人工推荐、场景导航和分类覆盖写在 `data/curated.json`；不要直接编辑生成后的推荐区块。
 
-Before submitting, make sure `README.md`, `README_EN.md`, and `data/repositories.json` are updated together.
+Curated recommendations, scenario navigation, and category overrides live in `data/curated.json`; do not edit generated recommendation sections directly.
+
+刷新最新 GitHub 数据：
+
+```bash
+node scripts/update.mjs
+```
+
+仅使用现有快照重新生成页面：
+
+```bash
+node scripts/update.mjs --from-snapshot
+```
+
+提交前请确认 `README.md`、`README_EN.md`、`CATALOG.md` 与 `data/repositories.json` 保持一致。
+
+Before submitting, make sure `README.md`, `README_EN.md`, `CATALOG.md`, and `data/repositories.json` stay in sync.
