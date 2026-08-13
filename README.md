@@ -4,12 +4,12 @@
 > 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-211-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-212-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--13-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全部 211 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [浏览全部 212 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
@@ -108,7 +108,7 @@
 | [YYTbit/dsh-plugin-claude-bridge](https://github.com/YYTbit/dsh-plugin-claude-bridge) | Bridge Claude Code memory, skills, and config into DeepSeek Harness | 2026-08-13 |
 | [titanwings/dsh-better-browser](https://github.com/titanwings/dsh-better-browser) | DSH 真实浏览器插件：通过 Kimi WebBridge 让 Agent 操作用户已登录的浏览器，并提供 13 个 webbridge_* 工具。 / Let DSH Agents use your signed-in browser through thirteen Kimi WebBridge tools. | 2026-08-13 |
 | [orriduck/dsh-tui](https://github.com/orriduck/dsh-tui) | A small, session-aware terminal UI for DeepSeek Harness | 2026-08-13 |
-| [FlashingChen/dsh-worktree](https://github.com/FlashingChen/dsh-worktree) | 仓库暂未提供简介。 | 2026-08-13 |
+| [FlashingChen/dsh-worktree](https://github.com/FlashingChen/dsh-worktree) | Codex-style permanent git worktrees for DeepSeek Harness: worktree_create/list/remove agent tools, a /worktree chat command, and durable per-repo manifests. | 2026-08-13 |
 | [yoke233/dsh-openai-codex-auth](https://github.com/yoke233/dsh-openai-codex-auth) | OpenAI Codex OAuth login and usage card plugin for DeepSeek Harness | 2026-08-13 |
 | [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表 | 2026-08-13 |
 | [Dominic789654/awesome-deepseek-harness](https://github.com/Dominic789654/awesome-deepseek-harness) | A curated list of plugins, skills, MCP servers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh | 2026-08-13 |
@@ -121,7 +121,7 @@
 - **结构化且可复现：** 推荐配置在 [data/curated.json](./data/curated.json)，原始元数据在 [data/repositories.json](./data/repositories.json)。
 - **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-13 UTC**。
 
-当前索引包含 **211** 个仓库、**10** 种主要语言；其中 **156** 个声明了许可证，**211** 个未归档且未禁用。
+当前索引包含 **212** 个仓库、**10** 种主要语言；其中 **158** 个声明了许可证，**212** 个未归档且未禁用。
 
 ## 使用与安全
 

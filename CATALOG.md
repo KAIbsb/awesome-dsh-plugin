@@ -6,16 +6,16 @@
 
 This page automatically lists every public repository under GitHub's [`dsh-plugin` topic](https://github.com/topics/dsh-plugin). It is a complete index, not a claim of editorial recommendation, compatibility, or security review.
 
-- Repositories: **211**
+- Repositories: **212**
 - Primary languages: **10**
-- Declared licenses: **156**
+- Declared licenses: **158**
 - Refreshed: **2026-08-13 UTC**
 
 ## 生态与资源 / Ecosystem & Resources (17)
 
 | Project | Description | Language | Stars | License | Updated |
 | --- | --- | --- | ---: | --- | --- |
-| [AdamPlatin123/awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) | ✨ Awesome DSH Plugins — DeepSeek Harness plugin directory with daily compatibility tracking ｜ DeepSeek Harness 插件生态目录与每日兼容性追踪 | Shell | 98 | — | 2026-08-13 |
+| [AdamPlatin123/awesome-dsh-plugins](https://github.com/AdamPlatin123/awesome-dsh-plugins) | ✨ Awesome DSH Plugins — DeepSeek Harness plugin directory with daily compatibility tracking ｜ DeepSeek Harness 插件生态目录与每日兼容性追踪 | Shell | 101 | — | 2026-08-13 |
 | [Alex-Yanggg/awesome-DSH-plugin](https://github.com/Alex-Yanggg/awesome-DSH-plugin) | A meticulously curated list of useful plugins, extensions, tools and development resources built for DSH, covering productivity enhancement, functional expansion, debugging utilities and custom development modules. | Python | 13 | MIT | 2026-08-13 |
 | [SenmuuuuW/dsh-group-photo](https://github.com/SenmuuuuW/dsh-group-photo) | DSH 内测收官合影墙：GitHub OAuth 零权限登录 + 冻结白名单校验的拍立得合影站（含 DSH Skill 包装） | HTML | 11 | MIT | 2026-08-13 |
 | [LoserFox/dsh-git-identity](https://github.com/LoserFox/dsh-git-identity) | DSH 插件：git 提交固定使用环境自身作者身份（优先 gh CLI 登录账号，GitHub noreply 邮箱），GIT_AUTHOR_*/GIT_COMMITTER_* 环境变量注入压过一切 git config | JavaScript | 5 | — | 2026-08-13 |
@@ -33,18 +33,18 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [omdsh-dev/dsh-hub-workshop](https://github.com/omdsh-dev/dsh-hub-workshop) | — | CSS | 0 | MIT | 2026-08-13 |
 | [whyihaveyou/dsh-suite](https://github.com/whyihaveyou/dsh-suite) | Bilingual curated DeepSeek Harness plugin directory — daily compat CI, create-dsh-plugin scaffold, own plugins. | — | 0 | — | 2026-08-13 |
 
-## 界面与体验 / UI & Experience (47)
+## 界面与体验 / UI & Experience (48)
 
 | Project | Description | Language | Stars | License | Updated |
 | --- | --- | --- | ---: | --- | --- |
-| [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center. | TypeScript | 151 | — | 2026-08-13 |
-| [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, long-screenshot OCR, UI restoration, grounding, pixel diff, Artifacts, and Web UI. | TypeScript | 49 | MIT | 2026-08-13 |
+| [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | Plugin and skin collection for DeepSeek Harness (DSH) Web UI - task board, git graph, right-side panel, remote mobile UI, pet, live token stats, and skin center. | TypeScript | 153 | — | 2026-08-13 |
+| [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 让纯文本模型更好地做视觉任务的DeepSeek Harness插件：带意图的图片问答、长截图 OCR、UI 还原等｜DeepSeek Harness-native integration for agent-vision-toolkit: image Q&A, long-screenshot OCR, UI restoration, grounding, pixel diff, Artifacts, and Web UI. | TypeScript | 51 | MIT | 2026-08-13 |
 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | dsh-tianshu-tui — DeepSeek Harness terminal UI | TypeScript | 37 | Apache-2.0 | 2026-08-13 |
 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 是兄弟就来蹬我！DSH Web UI 广告：2005 年中文站点风格的侧栏广告 / 对话内信息流 / 角落弹窗 + 一个真实热区比视觉小得多的关闭叉。素材全虚构，域名打码。 | TypeScript | 33 | — | 2026-08-13 |
 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 一个侧边栏的完整工作台，支持三方拓展注册新Tab页面，内置文件渲染编辑/终端/Git/子代理 | TypeScript | 33 | MIT | 2026-08-13 |
-| [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | DSH Web 鲸鱼娘皮肤系列(深海女仆工坊 maid-atelier)——CC BY-NC-SA 4.0 | TypeScript | 22 | — | 2026-08-13 |
+| [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | DSH Web 鲸鱼娘皮肤系列(深海女仆工坊 maid-atelier)——CC BY-NC-SA 4.0 | TypeScript | 23 | — | 2026-08-13 |
 | [omdsh-dev/dsh-notification](https://github.com/omdsh-dev/dsh-notification) | Desktop notifications for DeepSeek Harness turn completions, with per-outcome controls and include/exclude keyword rules. | JavaScript | 17 | MIT | 2026-08-13 |
-| [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) | 把你鲸鱼娘思考时的 deep diving 自定义成任意你想要的样子 | TypeScript | 15 | — | 2026-08-13 |
+| [alingalingling/ui-status-label](https://github.com/alingalingling/ui-status-label) | 把你鲸鱼娘思考时的 deep diving 自定义成任意你想要的样子 | TypeScript | 16 | — | 2026-08-13 |
 | [huiliyi37/dsh-tianshu-tui-placeholder](https://github.com/huiliyi37/dsh-tianshu-tui-placeholder) | dsh-tianshu-tui — DeepSeek Harness terminal UI | — | 13 | — | 2026-08-13 |
 | [Nagi-ovo/dsh-visualize](https://github.com/Nagi-ovo/dsh-visualize) | DSH 对话内生成式 UI 插件：模型把交互式 HTML 卡片直接画进会话流——visualize 工具 + 配套 skill + 沙箱渲染卡，带流式预览、组件浮入动画与鲸鱼蓝主题跟随 | TypeScript | 10 | — | 2026-08-13 |
 | [Lum1104/dsh-browser](https://github.com/Lum1104/dsh-browser) | Chrome sidebar extension that lets DSH operate your browser directly—no vision capabilities required. | TypeScript | 6 | BSD-3-Clause | 2026-08-13 |
@@ -84,6 +84,7 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [omdsh-dev/dsh-fun-weather](https://github.com/omdsh-dev/dsh-fun-weather) | DSH weather tab and weather-following themes powered by Open-Meteo | TypeScript | 0 | BSD-3-Clause | 2026-08-13 |
 | [omdsh-dev/dsh-pet-corner](https://github.com/omdsh-dev/dsh-pet-corner) | DSH Pet Corner: a floating pet, keyless pet-image proxy, favorites, and plugin-owned settings API | TypeScript | 0 | BSD-3-Clause | 2026-08-13 |
 | [orriduck/dsh-tui](https://github.com/orriduck/dsh-tui) | A small, session-aware terminal UI for DeepSeek Harness | TypeScript | 0 | MIT | 2026-08-13 |
+| [yuxino/dsh-blue-whale-maid](https://github.com/yuxino/dsh-blue-whale-maid) | — | JavaScript | 0 | NOASSERTION | 2026-08-13 |
 
 ## 设计、媒体与视觉 / Design, Media & Vision (6)
 
@@ -161,7 +162,7 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [lzszq/dsh-scholar](https://github.com/lzszq/dsh-scholar) | dsh-scholar | TypeScript | 0 | MIT | 2026-08-13 |
 | [omdsh-dev/dsh-kb-sieve](https://github.com/omdsh-dev/dsh-kb-sieve) | DSH knowledge-base plugin: build audit-able KB packs (references + SQLite FTS5) from md/txt/docx/pdf, deterministic retrieval (kb_query) and original-text reading (kb_read), zero-script generated skills. Apache-2.0. | TypeScript | 0 | Apache-2.0 | 2026-08-13 |
 
-## 开发者工具 / Developer Tools (18)
+## 开发者工具 / Developer Tools (19)
 
 | Project | Description | Language | Stars | License | Updated |
 | --- | --- | --- | ---: | --- | --- |
@@ -178,6 +179,7 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [omdsh-dev/dsh-tool-schema](https://github.com/omdsh-dev/dsh-tool-schema) | DSH JSON Schema 验证工具插件：validate/paths/explain/normalize，零网络零动态执行 | TypeScript | 1 | MIT | 2026-08-13 |
 | [omdsh-dev/dsh-tool-stat](https://github.com/omdsh-dev/dsh-tool-stat) | DSH 统计工具插件：描述统计/百分位数/频数分布/相关性，零依赖纯函数确定性 | TypeScript | 1 | MIT | 2026-08-13 |
 | [omdsh-dev/sandbox-micro](https://github.com/omdsh-dev/sandbox-micro) | microsandbox支持 | TypeScript | 1 | — | 2026-08-13 |
+| [FlashingChen/dsh-worktree](https://github.com/FlashingChen/dsh-worktree) | Codex-style permanent git worktrees for DeepSeek Harness: worktree_create/list/remove agent tools, a /worktree chat command, and durable per-repo manifests. | JavaScript | 0 | MIT | 2026-08-13 |
 | [omdsh-dev/dsh-inspect](https://github.com/omdsh-dev/dsh-inspect) | 发现问题(checkup) → 修复交付(fix) → 质量复查(review) 的对抗式闭环插件：基于官方 workflow 引擎的检查/修复/复查工具集 | JavaScript | 0 | MIT | 2026-08-13 |
 | [omdsh-dev/omdsh-runtime](https://github.com/omdsh-dev/omdsh-runtime) | — | — | 0 | MIT | 2026-08-13 |
 | [omdsh-dev/sandbox-mxc](https://github.com/omdsh-dev/sandbox-mxc) | 微软跨平台沙盒支持 | TypeScript | 0 | — | 2026-08-13 |
@@ -188,10 +190,10 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 
 | Project | Description | Language | Stars | License | Updated |
 | --- | --- | --- | ---: | --- | --- |
-| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | DeepSeek Harness: Everything is a Plugin. | TypeScript | 18233 | MIT | 2026-08-13 |
+| [deepseek-ai/deepseek-harness](https://github.com/deepseek-ai/deepseek-harness) | DeepSeek Harness: Everything is a Plugin. | TypeScript | 18411 | MIT | 2026-08-13 |
 | [pulseaiclub/phi](https://github.com/pulseaiclub/phi) | a coding Agent from pi. sub-agents, hashline edits, and a permission gate | Go | 68 | MIT | 2026-08-13 |
 | [taxueseek/argo](https://github.com/taxueseek/argo) | 专门为 agent 打造的 agent 搜索工具，具备多语言搜索能力，覆盖中文/英文/学术/代码/购物/金融/新闻/百科。 | Python | 45 | MIT | 2026-08-13 |
-| [ccch1mneyyy/dsh-cc-tui](https://github.com/ccch1mneyyy/dsh-cc-tui) | Claude Code 风格全屏交互终端插件：像素鲸鱼顶栏、流光大字、思考流式展开、双击 Esc 回滚、蓝白上下文进度条 + TPS 仪表 | TypeScript | 32 | BSD-3-Clause | 2026-08-13 |
+| [ccch1mneyyy/dsh-cc-tui](https://github.com/ccch1mneyyy/dsh-cc-tui) | Claude Code 风格全屏交互终端插件：像素鲸鱼顶栏、流光大字、思考流式展开、双击 Esc 回滚、蓝白上下文进度条 + TPS 仪表 | TypeScript | 33 | BSD-3-Clause | 2026-08-13 |
 | [icetomoyo/dsh_workflow](https://github.com/icetomoyo/dsh_workflow) | 把Claude Code的UltraCode模式带给DSH，把 DSH 的一次性多 Agent 调度，升级为可生成、可保存、可治理、可观察、可恢复的 Workflow 层 | TypeScript | 21 | MIT | 2026-08-13 |
 | [omdsh-dev/dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) | Codex-style @file mentions for DeepSeek Harness: search workspace files in the composer and attach their contents to prompts. | JavaScript | 19 | MIT | 2026-08-13 |
 | [Anionex/dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | deepseek harness对话回退插件 \| DSH — rewind conversation and workspace state, powered by a persistent Change Ledger | JavaScript | 14 | BSD-3-Clause | 2026-08-13 |
@@ -207,7 +209,7 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [THU-MAIC/dsh-openmaic](https://github.com/THU-MAIC/dsh-openmaic) | OpenMAIC for DeepSeek Harness: classrooms, slides, interactive widgets, and Socratic teaching | JavaScript | 1 | MIT | 2026-08-13 |
 | [vibeinging/dsh-trace](https://github.com/vibeinging/dsh-trace) | DeepSeek Harness telemetry backend that exports turns, model steps, and tool calls to yiTrace over HTTP. | TypeScript | 1 | BSD-3-Clause | 2026-08-13 |
 | [vlln/dsh-loop](https://github.com/vlln/dsh-loop) | DSH 插件：定时循环（/loop 命令 + loop 工具 + 活动状态条）。官方 bundle 插件，dsh plugin --profile web add 安装 | JavaScript | 1 | — | 2026-08-13 |
-| [wangshunnn/oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) | 🐋 Deepseek harness plugins. | — | 1 | MIT | 2026-08-13 |
+| [wangshunnn/oh-my-dsh](https://github.com/wangshunnn/oh-my-dsh) | 🐋 Deepseek harness plugins. | JavaScript | 1 | MIT | 2026-08-13 |
 | [william-jin-cmu/dsh-companion](https://github.com/william-jin-cmu/dsh-companion) | DeepSeek Harness 的常驻桌面助手：全局唤起、定时自动化、快捷回复、插件市场 | TypeScript | 1 | MIT | 2026-08-13 |
 | [william-jin-cmu/dsh-evolve](https://github.com/william-jin-cmu/dsh-evolve) | 自进化插件：agent 在 session 内随对话给自己长出/剪掉能力 —— evolve_add 热挂载持久化 cordis 插件（下一 step 工具即可见），evolve_remove 可逆卸载，重启自动恢复 | TypeScript | 1 | — | 2026-08-13 |
 | [zzh-newlearner/dsh-postmortem](https://github.com/zzh-newlearner/dsh-postmortem) | Local-first failure postmortems for DeepSeek Harness sessions. | TypeScript | 1 | MIT | 2026-08-13 |
@@ -229,11 +231,11 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [vibeinging/dsh-agent-budget](https://github.com/vibeinging/dsh-agent-budget) | Native Harness agent-tree token budget plugin | TypeScript | 0 | — | 2026-08-13 |
 | [yoke233/dsh-openai-codex-auth](https://github.com/yoke233/dsh-openai-codex-auth) | OpenAI Codex OAuth login and usage card plugin for DeepSeek Harness | JavaScript | 0 | MIT | 2026-08-13 |
 
-## 实用工具与其他 / Utilities & Other (33)
+## 实用工具与其他 / Utilities & Other (32)
 
 | Project | Description | Language | Stars | License | Updated |
 | --- | --- | --- | ---: | --- | --- |
-| [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) | DSH plugin: branch-based message editing, reroll, retry, version timeline | TypeScript | 7 | — | 2026-08-13 |
+| [Moeblack/dsh-message-edit](https://github.com/Moeblack/dsh-message-edit) | DSH plugin: branch-based message editing, reroll, retry, version timeline | TypeScript | 8 | — | 2026-08-13 |
 | [omdsh-dev/fabric](https://github.com/omdsh-dev/fabric) | 一种类似MC Fabric的hook处理器 | TypeScript | 6 | — | 2026-08-13 |
 | [omdsh-dev/dsh-security-audit](https://github.com/omdsh-dev/dsh-security-audit) | DSH 本机安全审计插件：配置/插件来源/会话/网络暴露面，只读脱敏风险报告 | TypeScript | 4 | MIT | 2026-08-13 |
 | [omdsh-dev/dsh-session-health](https://github.com/omdsh-dev/dsh-session-health) | DSH 会话健康检查插件：多帧 zstd 会话文件的帧级扫描诊断（torn/损坏/空会话检测），零依赖只读，注册 session_health 工具 | TypeScript | 4 | MIT | 2026-08-13 |
@@ -244,7 +246,6 @@ This page automatically lists every public repository under GitHub's [`dsh-plugi
 | [Small-tailqwq/dsh-deepcel](https://github.com/Small-tailqwq/dsh-deepcel) | 一款模仿 excel 的 dsh 皮肤 | TypeScript | 1 | — | 2026-08-13 |
 | [yjh051108/dsh-super-injector](https://github.com/yjh051108/dsh-super-injector) | — | TypeScript | 1 | — | 2026-08-13 |
 | [bill9109/dsh-101](https://github.com/bill9109/dsh-101) | DSH 文档阅读模式 | TypeScript | 0 | BSD-3-Clause | 2026-08-13 |
-| [FlashingChen/dsh-worktree](https://github.com/FlashingChen/dsh-worktree) | — | JavaScript | 0 | — | 2026-08-13 |
 | [havingautism/dsh-notebooks](https://github.com/havingautism/dsh-notebooks) | — | JavaScript | 0 | — | 2026-08-13 |
 | [HuanLinOTO/dsh-plugin-anti-ads](https://github.com/HuanLinOTO/dsh-plugin-anti-ads) | — | TypeScript | 0 | NOASSERTION | 2026-08-13 |
 | [HuanLinOTO/dsh-plugin-auto-blame](https://github.com/HuanLinOTO/dsh-plugin-auto-blame) | — | TypeScript | 0 | NOASSERTION | 2026-08-13 |
