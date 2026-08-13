@@ -238,4 +238,4 @@
 
 ## License
 
-本列表采用 [CC0 1.0 Universal](./LICENSE) 发布；各收录项目遵循其各自许可证。
+本列表采用 [MIT License](./LICENSE) 发布；各收录项目遵循其各自许可证。
