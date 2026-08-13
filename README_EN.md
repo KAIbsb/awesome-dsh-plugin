@@ -238,4 +238,4 @@ Issues and pull requests are welcome for classification fixes, clearer summaries
 
 ## License
 
-This list is released under [CC0 1.0 Universal](./LICENSE). Included projects retain their respective licenses.
+This list is released under the [MIT License](./LICENSE). Included projects retain their respective licenses.
