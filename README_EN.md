@@ -4,12 +4,12 @@
 > More than a repository dump: learn what each plugin solves, who it is for, and where to start.
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-208-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-209-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--13-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[中文](./README.md) · [Browse all 208 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
+[中文](./README.md) · [Browse all 209 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
 
 **If this list helps you discover something useful, consider leaving a Star ⭐ so more DSH users can find the ecosystem.**
 
@@ -104,6 +104,7 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 
 | Project | Description | Created |
 | --- | --- | --- |
+| [LingLambda/dsh-undo](https://github.com/LingLambda/dsh-undo) | Context undo/redo plugin for DeepSeek Harness (dsh): roll the model context back to the last completed step and restore it again. | 2026-08-13 |
 | [YYTbit/dsh-plugin-claude-bridge](https://github.com/YYTbit/dsh-plugin-claude-bridge) | Bridge Claude Code memory, skills, and config into DeepSeek Harness | 2026-08-13 |
 | [titanwings/dsh-better-browser](https://github.com/titanwings/dsh-better-browser) | DSH 真实浏览器插件：通过 Kimi WebBridge 让 Agent 操作用户已登录的浏览器，并提供 13 个 webbridge_* 工具。 / Let DSH Agents use your signed-in browser through thirteen Kimi WebBridge tools. | 2026-08-13 |
 | [orriduck/dsh-tui](https://github.com/orriduck/dsh-tui) | A small, session-aware terminal UI for DeepSeek Harness | 2026-08-13 |
@@ -111,7 +112,6 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 | [yoke233/dsh-openai-codex-auth](https://github.com/yoke233/dsh-openai-codex-auth) | OpenAI Codex OAuth login and usage card plugin for DeepSeek Harness | 2026-08-13 |
 | [awesome-dsh-plugin/awesome-dsh-plugin](https://github.com/awesome-dsh-plugin/awesome-dsh-plugin) | A curated list of plugins for DeepSeek Harness (dsh) · DeepSeek Harness 插件精选列表 | 2026-08-13 |
 | [Dominic789654/awesome-deepseek-harness](https://github.com/Dominic789654/awesome-deepseek-harness) | A curated list of plugins, skills, MCP servers, orchestrators & UIs for DeepSeek Harness (DSH). Visualization · PPT · Coding · Agents · Loops (auto-research) and more. #dsh | 2026-08-13 |
-| [omdsh-dev/dsh-pet-corner](https://github.com/omdsh-dev/dsh-pet-corner) | DSH Pet Corner: a floating pet, keyless pet-image proxy, favorites, and plugin-owned settings API | 2026-08-13 |
 
 ## Why this list?
 
@@ -121,7 +121,7 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 - **Structured and reproducible:** curation lives in [data/curated.json](./data/curated.json), while source metadata lives in [data/repositories.json](./data/repositories.json).
 - **Continuously refreshed:** the catalog updates daily from GitHub's `dsh-plugin` topic. Current data timestamp: **2026-08-13 UTC**.
 
-The index currently covers **208** repositories across **10** primary languages. **153** declare a license, and **208** are neither archived nor disabled.
+The index currently covers **209** repositories across **10** primary languages. **154** declare a license, and **209** are neither archived nor disabled.
 
 ## Usage and safety
 
