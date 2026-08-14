@@ -4,12 +4,12 @@
 > 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-505-2563eb)
-![Updated](https://img.shields.io/badge/updated-2026--08--13-16a34a)
+![Plugins](https://img.shields.io/badge/plugins-913-2563eb)
+![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全部 505 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [浏览全部 913 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
@@ -105,14 +105,14 @@
 
 | 项目 | 简介 | 创建日期 |
 | --- | --- | --- |
-| [alison-xx/deepseek-harness-flow](https://github.com/alison-xx/deepseek-harness-flow) | Visual workflows and multi-model evaluation for DeepSeek Harness | 2026-08-13 |
-| [dingkaihu63/dsh-robotic-harness](https://github.com/dingkaihu63/dsh-robotic-harness) | Robotic Harness: embodied-intelligence research tools for DeepSeek Harness - robot asset inspection, MuJoCo pick-place simulation with fault injection, evidence-based diagnostics, and reproducible experiment bundles. | 2026-08-13 |
-| [suimi8/dsh-test-runner](https://github.com/suimi8/dsh-test-runner) | DSH plugin: structured test runner tool (test_run) — auto-detect vitest/jest/pytest/node:test, run tests, parse failure summaries for the model. | 2026-08-13 |
-| [NEXTINDIE/DeepSeek-Harness-for-VS-Code](https://github.com/NEXTINDIE/DeepSeek-Harness-for-VS-Code) | Use DeepSeek Harness in VS Code like ChatGPT/Copilot: @dsh in native chat, standalone views, cross-project sessions, shared via DSH API. Auto-starts server. | 2026-08-13 |
-| [xiaoyuxiaoyuqwq/dsh-desktop](https://github.com/xiaoyuxiaoyuqwq/dsh-desktop) | DeepSeek Harness desktop shell — one-click Electron wrapper around dsh web | 2026-08-13 |
-| [tree201/dsh-capability-inspector](https://github.com/tree201/dsh-capability-inspector) | DeepSeek Harness Doctor and DSH runtime diagnostics for tools, models, skills, workspaces, sessions, plugins, and MCP troubleshooting | 2026-08-13 |
-| [benzhoupo/dsh-effort-config](https://github.com/benzhoupo/dsh-effort-config) | dsh plugin: configure reasoning-effort levels (wire spellings), route default level and Anthropic token budgets for third-party models from the settings page; selection reuses the native model-picker Effort panel. | 2026-08-13 |
-| [Moximxxx/dsh-find-skill](https://github.com/Moximxxx/dsh-find-skill) | dsh plugin bridging the vercel-labs/skills ecosystem: LLM-driven skill search, install, and lifecycle for temp/project/global scopes.  | 2026-08-13 |
+| [KeLearns/dsh-update-checker](https://github.com/KeLearns/dsh-update-checker) | DeepSeek Harness official runtime update checker plugin | 2026-08-14 |
+| [Shmilyol/dsh-skin](https://github.com/Shmilyol/dsh-skin) | 仓库暂未提供简介。 | 2026-08-14 |
+| [hccccc01333/dsh-analytics](https://github.com/hccccc01333/dsh-analytics) | 仓库暂未提供简介。 | 2026-08-14 |
+| [skyzhao1223/dsh-plugin-scaffold](https://github.com/skyzhao1223/dsh-plugin-scaffold) | Minimal runnable DeepSeek Harness (dsh) plugin scaffold: one model-facing tool via ctx.tools | 2026-08-14 |
+| [TheYoungChen/dsh-plugin-market](https://github.com/TheYoungChen/dsh-plugin-market) | DeepSeek Harness plugin market - browse, search & install dsh-plugin topic plugins (dsh 插件市场：浏览/搜索/安装插件) | 2026-08-14 |
+| [Nunchakus888/dsh-turn-budget](https://github.com/Nunchakus888/dsh-turn-budget) | Fail-closed per-turn step, tool-call, and provider-token budgets for DeepSeek Harness | 2026-08-14 |
+| [EvilIrving/dsh-repro](https://github.com/EvilIrving/dsh-repro) | 仓库暂未提供简介。 | 2026-08-14 |
+| [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) | 仓库暂未提供简介。 | 2026-08-14 |
 
 ## 为什么维护这个列表？
 
@@ -120,9 +120,9 @@
 - **人工推荐 + 全量索引：** 首页提供选择建议，[CATALOG.md](./CATALOG.md) 保留完整 Topic 快照。
 - **中文默认，中英双语：** 普通用户可以直接理解，英文读者也有独立入口。
 - **结构化且可复现：** 推荐配置在 [data/curated.json](./data/curated.json)，原始元数据在 [data/repositories.json](./data/repositories.json)。
-- **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-13 UTC**。
+- **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-14 UTC**。
 
-当前索引包含 **505** 个仓库、**13** 种主要语言；其中 **416** 个声明了许可证，**505** 个未归档且未禁用。
+当前索引包含 **913** 个仓库、**17** 种主要语言；其中 **764** 个声明了许可证，**912** 个未归档且未禁用。
 
 ## 使用与安全
 

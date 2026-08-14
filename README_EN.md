@@ -4,12 +4,12 @@
 > More than a repository dump: learn what each plugin solves, who it is for, and where to start.
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-505-2563eb)
-![Updated](https://img.shields.io/badge/updated-2026--08--13-16a34a)
+![Plugins](https://img.shields.io/badge/plugins-913-2563eb)
+![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[中文](./README.md) · [Browse all 505 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
+[中文](./README.md) · [Browse all 913 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
 
 **If this list helps you discover something useful, consider leaving a Star ⭐ so more DSH users can find the ecosystem.**
 
@@ -105,14 +105,14 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 
 | Project | Description | Created |
 | --- | --- | --- |
-| [alison-xx/deepseek-harness-flow](https://github.com/alison-xx/deepseek-harness-flow) | Visual workflows and multi-model evaluation for DeepSeek Harness | 2026-08-13 |
-| [dingkaihu63/dsh-robotic-harness](https://github.com/dingkaihu63/dsh-robotic-harness) | Robotic Harness: embodied-intelligence research tools for DeepSeek Harness - robot asset inspection, MuJoCo pick-place simulation with fault injection, evidence-based diagnostics, and reproducible experiment bundles. | 2026-08-13 |
-| [suimi8/dsh-test-runner](https://github.com/suimi8/dsh-test-runner) | DSH plugin: structured test runner tool (test_run) — auto-detect vitest/jest/pytest/node:test, run tests, parse failure summaries for the model. | 2026-08-13 |
-| [NEXTINDIE/DeepSeek-Harness-for-VS-Code](https://github.com/NEXTINDIE/DeepSeek-Harness-for-VS-Code) | Use DeepSeek Harness in VS Code like ChatGPT/Copilot: @dsh in native chat, standalone views, cross-project sessions, shared via DSH API. Auto-starts server. | 2026-08-13 |
-| [xiaoyuxiaoyuqwq/dsh-desktop](https://github.com/xiaoyuxiaoyuqwq/dsh-desktop) | DeepSeek Harness desktop shell — one-click Electron wrapper around dsh web | 2026-08-13 |
-| [tree201/dsh-capability-inspector](https://github.com/tree201/dsh-capability-inspector) | DeepSeek Harness Doctor and DSH runtime diagnostics for tools, models, skills, workspaces, sessions, plugins, and MCP troubleshooting | 2026-08-13 |
-| [benzhoupo/dsh-effort-config](https://github.com/benzhoupo/dsh-effort-config) | dsh plugin: configure reasoning-effort levels (wire spellings), route default level and Anthropic token budgets for third-party models from the settings page; selection reuses the native model-picker Effort panel. | 2026-08-13 |
-| [Moximxxx/dsh-find-skill](https://github.com/Moximxxx/dsh-find-skill) | dsh plugin bridging the vercel-labs/skills ecosystem: LLM-driven skill search, install, and lifecycle for temp/project/global scopes.  | 2026-08-13 |
+| [KeLearns/dsh-update-checker](https://github.com/KeLearns/dsh-update-checker) | DeepSeek Harness official runtime update checker plugin | 2026-08-14 |
+| [Shmilyol/dsh-skin](https://github.com/Shmilyol/dsh-skin) | No description provided yet. | 2026-08-14 |
+| [hccccc01333/dsh-analytics](https://github.com/hccccc01333/dsh-analytics) | No description provided yet. | 2026-08-14 |
+| [skyzhao1223/dsh-plugin-scaffold](https://github.com/skyzhao1223/dsh-plugin-scaffold) | Minimal runnable DeepSeek Harness (dsh) plugin scaffold: one model-facing tool via ctx.tools | 2026-08-14 |
+| [TheYoungChen/dsh-plugin-market](https://github.com/TheYoungChen/dsh-plugin-market) | DeepSeek Harness plugin market - browse, search & install dsh-plugin topic plugins (dsh 插件市场：浏览/搜索/安装插件) | 2026-08-14 |
+| [Nunchakus888/dsh-turn-budget](https://github.com/Nunchakus888/dsh-turn-budget) | Fail-closed per-turn step, tool-call, and provider-token budgets for DeepSeek Harness | 2026-08-14 |
+| [EvilIrving/dsh-repro](https://github.com/EvilIrving/dsh-repro) | No description provided yet. | 2026-08-14 |
+| [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) | No description provided yet. | 2026-08-14 |
 
 ## Why this list?
 
@@ -120,9 +120,9 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 - **Human guidance plus complete coverage:** the home page helps you choose; [CATALOG.md](./CATALOG.md) preserves the full topic snapshot.
 - **Bilingual by design:** Chinese is the default, with an independent English entry point.
 - **Structured and reproducible:** curation lives in [data/curated.json](./data/curated.json), while source metadata lives in [data/repositories.json](./data/repositories.json).
-- **Continuously refreshed:** the catalog updates daily from GitHub's `dsh-plugin` topic. Current data timestamp: **2026-08-13 UTC**.
+- **Continuously refreshed:** the catalog updates daily from GitHub's `dsh-plugin` topic. Current data timestamp: **2026-08-14 UTC**.
 
-The index currently covers **505** repositories across **13** primary languages. **416** declare a license, and **505** are neither archived nor disabled.
+The index currently covers **913** repositories across **17** primary languages. **764** declare a license, and **912** are neither archived nor disabled.
 
 ## Usage and safety
 
