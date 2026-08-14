@@ -4,6 +4,8 @@ on:
   pull_request:
     paths:
       - 'data/curated.json'
+      - 'README.md'
+      - 'README_EN.md'
       - 'scripts/**'
       - '.github/workflows/validate-curated.yml'
 

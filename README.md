@@ -23,6 +23,7 @@
 | 按热度或分类翻完整清单 | [TOP100.md](./TOP100.md)（热度榜）· [CATALOG.md](./CATALOG.md)（全量目录） |
 | 用程序消费插件数据 | [data/repositories.json](./data/repositories.json)——每日自动快照，含星数、许可证、活跃度等元数据 |
 | 收录你自己的插件 | 不需要给我们提 PR：仓库加上 `dsh-plugin` Topic 即会自动进入全量目录，详见[文末](#-推荐或修正插件) |
+| 你是插件作者，想上首页曝光 | [作者自荐区](#-作者自荐)：按规范提交一条自荐，无需编辑部审核，区满后先进先出 |
 
 ## 🗺️ 生态全景
 
@@ -97,7 +98,7 @@ mindmap
 | 回合结束时收到桌面通知 | [dsh-notification](https://github.com/omdsh-dev/dsh-notification) | 按结果类型（成功/失败）控制通知，支持关键词过滤，长时间任务无需盯屏。 |
 | 回退对话与工作区状态 | [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | 基于持久化 Change Ledger 回退到任意早期回合，对话与代码状态一起恢复。 |
 | 给工作区增加一个陪伴型宠物 | [whale-girl](https://github.com/vlln/whale-girl) | 可拖拽、投喂和玩耍的积累型鲸鱼娘桌面伙伴。 |
-| 把其他工具的历史会话搬进 DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 全保真导入 Claude Code / Codex / ChatGPT / Cursor 的聊天记录（含工具调用/思考块），导入后可直接续聊。 |
+| 把其他工具的历史会话搬进 DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 13 源全保真导入（Claude Code/Codex/ChatGPT/Cursor/Gemini/Reasonix/opencode/ZCode/Grok Build/OpenClaw/Pi/Hermes/Kimi）历史会话为可续聊 DSH 会话，并支持反向导出/同步回 Claude Code。 |
 | 换皮肤、自定义背景 | [dsh-skin](https://github.com/KinGao294/dsh-skin) · [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | dsh-skin 一键切换多套 --dsw-alias-* 配色并支持半透明壁纸（Codex 风格）；dsh-deep-whale 是生态内最受欢迎的鲸鱼娘皮肤系列（CC BY-NC-SA，不可商用）。 |
 | 查看 Token 用量与费用 | [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing) · [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) | 按官方政策自动计价（含峰谷时段），逐条消息记账，显示账号余额；界面语言自动切换人民币/美元。 |
 | 让外部 Agent 驱动 Harness 执行任务 | [dsh-harness-mcp-server](https://github.com/chushixixin/dsh-harness-mcp-server) | 在 Harness 内部启动 MCP server，让任意 MCP 客户端（如 Hermes）下发任务给 Harness 执行，实现「大脑 + 胳膊」协作。 |
@@ -197,6 +198,19 @@ mindmap
 | [pineapple880066/dsh-desktop-pets](https://github.com/pineapple880066/dsh-desktop-pets) | Codex-style desktop pets for DeepSeek Harness (dsh-plugin) | 2026-08-14 |
 | [sherconan/dsh-web-recon](https://github.com/sherconan/dsh-web-recon) | 网页系统侦察 · DeepSeek Harness 插件：摸清一个网页系统怎么运作，只摸一次。抓真实接口与可访问性树，固化成可复用的作战手册。零依赖，不用 Playwright。 | 2026-08-14 |
 
+## 📣 作者自荐
+
+插件作者按 [CONTRIBUTING](./CONTRIBUTING.md#作者自荐--self-promotion) 规范自行提交的推荐位：**不经编辑部审核，也不代表质量或安全背书**，安装前请自行评估（见下方「使用与安全」）。本区最多保留 15 条，区满后先进先出；条目若被编辑精选收录，会从本区移除。
+
+- **[dsh-skin-amis](https://github.com/wanzhiwei5/dsh-skin-amis)**（[@wanzhiwei5](https://github.com/wanzhiwei5) · 2026-08-14）— 以鸣潮角色「爱弥斯」为灵感的粉白主题皮肤：樱花粉渐变、赛博霓虹深色模式、内置角色背景图与半透明毛玻璃面板，浅深双主题一键切换。
+- **[dsh-plugin-hub](https://github.com/Noob-stupid/dsh-plugin-hub)**（[@Noob-stupid](https://github.com/Noob-stupid) · 2026-08-14）— 插件管理面板：已安装插件一键启用/停用，内置 GitHub `dsh-plugin` 插件市场，支持查看插件详情与一键安装。
+- **[dsh-github-login](https://github.com/Noob-stupid/dsh-github-login)**（[@Noob-stupid](https://github.com/Noob-stupid) · 2026-08-14）— 零终端的 GitHub 可视化登录：设备码流程，令牌落盘并同步 gh CLI 配置，登录完成即可直接使用 gh。
+- **[dsh-session-deeplink](https://github.com/R3alloc/dsh-session-deeplink)**（[@R3alloc](https://github.com/R3alloc) · 2026-08-14）— 为每个会话生成可复用的 `/?session=<id>` 深链接：地址栏随会话同步，链接可收藏、分享，刷新后恢复目标会话；纯浏览器端实现，不增加 host 服务。
+- **[dsh-vision-proxy](https://github.com/Flyvhidbwo/dsh-vision-proxy)**（[@Flyvhidbwo](https://github.com/Flyvhidbwo) · 2026-08-14）— DeepSeek 大脑 + 自动识图：附加图片自动经 OpenAI 兼容 VLM 转译成文字后交给 DeepSeek 作答；无 key 时自动探测本地 Ollama。注意：默认配置会把图片发送到第三方 VLM 端点，介意隐私请改用本地端点。
+- **[dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate)**（[@GIT121995](https://github.com/GIT121995) · 2026-08-14）— 「检索到≠注入」的本地长期记忆：每条记忆须通过 CBDC 四段权威门控才进入上下文，输出可解释的 use/verify/ignore 决策并保留审计日志；默认每次最多注入 3 条、1200 字符，不增加第二次模型调用。
+- **[dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier)**（[@yeruizhi](https://github.com/yeruizhi) · 2026-08-14）— 飞书会议提醒悬浮框：展示今日/明日会议、多闹钟闪烁提醒，在你跟 AI 聊得忘我时提醒「该去跟碳基生命开会了」。
+- **[dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)**（[@dhicoc](https://github.com/dhicoc) · 2026-08-14）— 85 个 SKILL.md 组成的逆向工程、授权渗透测试与安全研究技能包，安装后按任务自动路由对应技能。
+
 ## 🔍 我们如何维护这个列表
 
 - **面向使用者，而不是爬虫：** 从「我想完成什么」出发组织首页，而不是让你阅读几百行仓库名称。
@@ -216,6 +230,7 @@ mindmap
 发现遗漏、分类不准确或说明过时？欢迎提交 Issue 或 Pull Request：
 
 - **收录你的插件：** 公开仓库只要带上 `dsh-plugin` Topic 且确实是 DSH 插件，就会在每日刷新时自动进入全量目录——**不需要给我们提 PR**。蹭 Topic 的条目会被剔除，理由记录在 [data/curated.json](./data/curated.json)。
+- **作者自荐上首页：** 如果你是插件作者，可以按 [CONTRIBUTING](./CONTRIBUTING.md#作者自荐--self-promotion) 的自荐规范在「[作者自荐](#-作者自荐)」区提交一条自荐，无需编辑部审核。
 - **上首页推荐：** 首页的场景推荐、编辑推荐与榜单为人工维护页面，提 Issue 告诉我们它解决什么问题、适合谁，或直接编辑对应 Markdown 并附上理由。
 
 详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。

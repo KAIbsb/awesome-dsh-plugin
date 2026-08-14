@@ -17,6 +17,26 @@ Thank you for helping maintain Awesome DSH Plugin.
 - Descriptions should be accurate and concise, without unverifiable marketing claims.
 - Important status such as archival, missing license, or evident security risk should be disclosed.
 
+## 作者自荐 / Self-promotion
+
+「作者自荐」区（[README.md](./README.md) / [README_EN.md](./README_EN.md) 首页）是插件作者自行提交的推荐位：**不经编辑部审核**，但仍须满足上方收录标准。规则：
+
+- 仅限仓库作者或维护者本人提交；一个 PR 只推荐一个仓库。
+- PR 描述中必须附**自荐说明**：解决什么问题、适合谁（一两句即可，中文或英文任一；不使用无法核实的宣传语）。
+- 仓库须满足上方收录标准（公开、带 `dsh-plugin` Topic、已填写简介、是真实的 DSH 插件或生态资源）。
+- 改动方式：在两个 README 自荐区列表**末尾各追加一行**（中英对应），不要改动其他人工维护内容，也不要提交生成文件。
+- 自荐区最多保留 15 条，区满后先进先出；条目被编辑精选收录后会从自荐区移除。
+- 提交前本地自检：`node scripts/validate-curated.mjs`（会校验自荐区条目格式，并通过 GitHub API 确认仓库公开且带 Topic）。
+
+The Author showcase section on the front pages ([README.md](./README.md) / [README_EN.md](./README_EN.md)) is a self-submission lane for plugin owners: **no editorial review**, but the inclusion criteria above still apply.
+
+- Only the repository owner or a maintainer may submit; one repository per pull request.
+- The PR description must include a short **self-recommendation**: what problem it solves and for whom (one or two sentences, Chinese or English; no unverifiable marketing claims).
+- The repository must meet the inclusion criteria above (public, `dsh-plugin` topic, description set, a real DSH plugin or ecosystem resource).
+- How to change it: append exactly one line to the end of the showcase list in **both** READMEs (Chinese and English); do not touch other hand-maintained content or commit generated files.
+- At most 15 entries are kept — first in, first out; entries promoted to Editor's picks are removed from the showcase.
+- Validate locally before submitting: `node scripts/validate-curated.mjs` (it also checks showcase entry format and repository topics through the GitHub API).
+
 ## 推荐一个插件 / Recommending a plugin
 
 首页的场景导航、入门套装、编辑推荐、热度榜（[README.md](./README.md) / [README_EN.md](./README_EN.md)）和 [TOP100.md](./TOP100.md) 都是人工维护页面：直接编辑对应 Markdown，并附上清晰的使用场景和理由（首页内容请同时提供中英文）。分类覆盖和蹭 Topic 排除名单写在 `data/curated.json`。

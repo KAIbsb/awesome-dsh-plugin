@@ -23,6 +23,7 @@ This repository is split into three layers — pick the depth you need:
 | Browse everything by stars or category | [TOP100.md](./TOP100.md) (leaderboard) · [CATALOG.md](./CATALOG.md) (full catalog) |
 | Consume plugin data programmatically | [data/repositories.json](./data/repositories.json) — daily automated snapshot with stars, license, and activity metadata |
 | List your own plugin | No PR needed: tag your repo `dsh-plugin` and it enters the catalog automatically — see [Contributing](#-recommend-or-correct-an-entry) |
+| You wrote a plugin and want front-page visibility | [Author showcase](#-author-showcase): submit one self-recommendation per the rules — no editorial review, first in first out |
 
 ## 🗺️ Ecosystem at a glance
 
@@ -97,7 +98,7 @@ Start from your problem, not from a category. Find the closest row — the answe
 | Get notified when a turn finishes | [dsh-notification](https://github.com/omdsh-dev/dsh-notification) | Per-outcome notifications with keyword include/exclude rules so long tasks need no babysitting. |
 | Rewind conversation and workspace state | [dsh-turn-rewind](https://github.com/Anionex/dsh-turn-rewind) | Rewind to any earlier turn via a persistent Change Ledger, restoring both conversation and workspace state. |
 | Add a companion to the workspace | [whale-girl](https://github.com/vlln/whale-girl) | A draggable companion with feeding, play, and persistent progression. |
-| Migrate chat histories from other tools into DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | Full-fidelity import of Claude Code / Codex / ChatGPT / Cursor transcripts (tools + thinking) as resumable DSH sessions. |
+| Migrate chat histories from other tools into DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | Full-fidelity import from 13 sources (Claude Code/Codex/ChatGPT/Cursor/Gemini/Reasonix/opencode/ZCode/Grok Build/OpenClaw/Pi/Hermes/Kimi) into resumable DSH sessions, plus reverse export/sync back to Claude Code. |
 | Change the skin / set a custom wallpaper | [dsh-skin](https://github.com/KinGao294/dsh-skin) · [dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | dsh-skin switches --dsw-alias-* palettes and translucent wallpapers (Codex-style); dsh-deep-whale is the most popular whale-girl skin series (CC BY-NC-SA, non-commercial). |
 | Track token usage and costs | [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing) · [dsh-cost-meter](https://github.com/Han-1413141/dsh-cost-meter) | Auto-bill per message with official pricing (incl. peak/off-peak hours), keep a persistent cost ledger, show the account balance, and switch ¥/$ with the UI language. |
 | Drive Harness from an external agent | [dsh-harness-mcp-server](https://github.com/chushixixin/dsh-harness-mcp-server) | Runs an MCP server inside Harness so any MCP client (e.g. Hermes) can delegate coding tasks to Harness — a 'brain + arms' setup. |
@@ -197,6 +198,19 @@ Manually screened recent projects, updated from time to time:
 | [pineapple880066/dsh-desktop-pets](https://github.com/pineapple880066/dsh-desktop-pets) | Codex-style desktop pets for DeepSeek Harness (dsh-plugin) | 2026-08-14 |
 | [sherconan/dsh-web-recon](https://github.com/sherconan/dsh-web-recon) | Web-system reconnaissance · DeepSeek Harness plugin: learn how a web system works, once. Captures real endpoints and the accessibility tree into a reusable playbook. Zero deps, no Playwright. | 2026-08-14 |
 
+## 📣 Author showcase
+
+Self-submitted recommendations from plugin authors, following the [contributing rules](./CONTRIBUTING.md#作者自荐--self-promotion). **These entries are not editorially reviewed and carry no quality or security endorsement** — evaluate them yourself before installing (see Usage & safety below). At most 15 entries are kept — first in, first out; entries promoted to Editor's picks are removed from this section.
+
+- **[dsh-skin-amis](https://github.com/wanzhiwei5/dsh-skin-amis)** ([@wanzhiwei5](https://github.com/wanzhiwei5) · 2026-08-14) — A Wuthering Waves Amis-inspired pink-white skin: sakura gradients, a cyber-neon dark mode, a bundled character wallpaper and translucent glass panels, with one-click light/dark switching.
+- **[dsh-plugin-hub](https://github.com/Noob-stupid/dsh-plugin-hub)** ([@Noob-stupid](https://github.com/Noob-stupid) · 2026-08-14) — Plugin manager panel: one-click enable/disable for installed plugins, plus a GitHub `dsh-plugin` marketplace with plugin details and one-click installs.
+- **[dsh-github-login](https://github.com/Noob-stupid/dsh-github-login)** ([@Noob-stupid](https://github.com/Noob-stupid) · 2026-08-14) — Visual GitHub login with zero terminal: device-code flow, token persisted and synced into gh CLI config so the CLI works right after login.
+- **[dsh-session-deeplink](https://github.com/R3alloc/dsh-session-deeplink)** ([@R3alloc](https://github.com/R3alloc) · 2026-08-14) — Gives every session a reusable `/?session=<id>` deep link: the address bar follows the active session, links can be bookmarked or shared and restore the session after a refresh; browser-only, no host service added.
+- **[dsh-vision-proxy](https://github.com/Flyvhidbwo/dsh-vision-proxy)** ([@Flyvhidbwo](https://github.com/Flyvhidbwo) · 2026-08-14) — Keep DeepSeek as the brain and auto-describe attached images via any OpenAI-compatible VLM; auto-detects local Ollama when no key is set. Note: the default configuration sends images to a third-party VLM endpoint — switch to a local endpoint if that matters to you.
+- **[dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate)** ([@GIT121995](https://github.com/GIT121995) · 2026-08-14) — Local long-term memory where retrieved ≠ injected: every memory must pass CBDC authority gating before entering context, with explainable use/verify/ignore decisions and a full audit trail; capped at 3 claims / 1,200 characters per turn, no extra model call.
+- **[dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier)** ([@yeruizhi](https://github.com/yeruizhi) · 2026-08-14) — A Feishu/Lark meeting-reminder panel: today's and tomorrow's meetings with flashing alarms, nudging you when it's time to "go meet carbon-based lifeforms".
+- **[dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)** ([@dhicoc](https://github.com/dhicoc) · 2026-08-14) — A pack of 85 SKILL.md files covering reverse engineering, authorized pentesting, and security research, routed on demand.
+
 ## 🔍 How this list is maintained
 
 - **Built for users, not crawlers:** the front page is organized around "what I want to get done", not hundreds of repo names.
@@ -216,6 +230,7 @@ Third-party plugins can read conversations, files, network traffic, or system re
 Spot a miss, a wrong category, or stale wording? Open an Issue or Pull Request:
 
 - **Get your plugin listed:** a public repo tagged `dsh-plugin` that is actually a DSH plugin enters the full catalog automatically on the next daily refresh — **no PR to this repo needed**. Topic riders are removed, with reasons recorded in [data/curated.json](./data/curated.json).
+- **Self-promote as an author:** if you own the plugin, add one entry to the [Author showcase](#-author-showcase) following the [contributing rules](./CONTRIBUTING.md#作者自荐--self-promotion) — no editorial review needed.
 - **Get on the front page:** scenario picks, editor's picks, and the leaderboard are hand-maintained — open an Issue telling us what problem it solves and for whom, or edit the corresponding Markdown directly with your reasoning.
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
