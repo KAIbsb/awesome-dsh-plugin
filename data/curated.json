@@ -11,6 +11,9 @@
     "bpc-oss/dsh-web-billing": "ui-experience",
     "ccch1mneyyy/dsh-TUI": "ui-experience"
   },
+  "excluded_repos": {
+    "AdamPlatin123/awesome-dsh-plugins": "Not a DSH plugin — a competing/duplicate plugin-catalog site that tags itself with the dsh-plugin topic."
+  },
   "scenarios": [
     {
       "goal_zh": "想要独立的桌面客户端，而不是浏览器标签页",
@@ -64,9 +67,16 @@
     {
       "goal_zh": "给 DSH 增加视觉理解能力",
       "goal_en": "Add visual understanding to DSH",
-      "repos": ["Anionex/dsh-vision-toolkit"],
-      "why_zh": "覆盖图片问答、长截图 OCR、UI 还原、定位和像素对比。",
-      "why_en": "Add image Q&A, long-screenshot OCR, UI restoration, grounding, and pixel diffs."
+      "repos": ["Anionex/dsh-vision-toolkit", "ycp424c/dsh-luna-vision-bridge"],
+      "why_zh": "覆盖图片问答、长截图 OCR、UI 还原、定位和像素对比；纯文本模型也可以通过 Luna 转写桥接继续处理图片。",
+      "why_en": "Add image Q&A, long-screenshot OCR, UI restoration, grounding, and pixel diffs — or bridge pure-text models to image input via a Luna transcription adapter."
+    },
+    {
+      "goal_zh": "在开发对话里直接检查和操作当前网页",
+      "goal_en": "Inspect and operate the current web page from your dev conversation",
+      "repos": ["ycp424c/dsh-browser-bridge"],
+      "why_zh": "把完整 DSH Web 嵌进 Chrome 侧边栏，按 prompt 显式授权当前标签页，DSH 能在同一对话里读取 DOM、样式、console 报错并操作页面，无需另开浏览器专用对话。",
+      "why_en": "Embeds the full DSH Web in a Chrome side panel; grant the current tab per prompt so DSH can read the DOM, styles, and console errors and interact with the page inside your existing conversation instead of a separate browser chat."
     },
     {
       "goal_zh": "给工作区增加一个陪伴型宠物",

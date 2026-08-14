@@ -13,17 +13,23 @@ const curated = JSON.parse(await readFile(resolve(root, 'data/curated.json'), 'u
 const categoryOverrides = new Map(
   Object.entries(curated.category_overrides || {}).map(([fullName, category]) => [fullName.toLowerCase(), category]),
 );
+// Repositories that carry the dsh-plugin topic but are not themselves a DSH plugin
+// (e.g. a competing catalog/directory site) — keyed by full_name, value is the reason.
+const excludedRepos = new Map(
+  Object.entries(curated.excluded_repos || {}).map(([fullName, reason]) => [fullName.toLowerCase(), reason]),
+);
+
+const apiHeaders = {
+  Accept: 'application/vnd.github+json',
+  'User-Agent': 'awesome-dsh-plugin',
+  'X-GitHub-Api-Version': '2022-11-28',
+};
+if (process.env.GITHUB_TOKEN) apiHeaders.Authorization = `Bearer ${process.env.GITHUB_TOKEN}`;
 
 async function fetchPage(page) {
   const response = await fetch(
     `https://api.github.com/search/repositories?q=${encodeURIComponent(query)}&per_page=100&page=${page}`,
-    {
-      headers: {
-        Accept: 'application/vnd.github+json',
-        'User-Agent': 'awesome-dsh-plugin',
-        'X-GitHub-Api-Version': '2022-11-28',
-      },
-    },
+    { headers: apiHeaders },
   );
   if (!response.ok) throw new Error(`GitHub API ${response.status}: ${await response.text()}`);
   return response.json();
@@ -94,6 +100,7 @@ const snapshot = fromSnapshot
   : await refreshSnapshot();
 const repositories = snapshot.repositories
   .filter((repo) => repo.description && repo.description.trim())
+  .filter((repo) => !excludedRepos.has(repo.full_name.toLowerCase()))
   .map((repo) => {
     const category = categoryFor({ ...repo, name: repo.name || repo.full_name.split('/')[1] });
     return {

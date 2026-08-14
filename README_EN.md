@@ -4,12 +4,12 @@
 > More than a repository dump: learn what each plugin solves, who it is for, and where to start.
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-883-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-892-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[中文](./README.md) · [Browse all 883 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
+[中文](./README.md) · [Browse all 892 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
 
 **If this list helps you discover something useful, consider leaving a Star ⭐ so more DSH users can find the ecosystem.**
 
@@ -24,7 +24,7 @@
 | Navigate and annotate long conversations | [dsh-navbar](https://github.com/vlln/dsh-navbar) · [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) | Jump between user-message nodes and attach Codex-style annotations. |
 | Render interactive UI in chat | [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | Render charts, forms, quizzes, Mermaid diagrams, and 3D scenes inline. |
 | Let agents operate a real design canvas | [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) | Create, edit, preview, and validate interactive multi-page OpenPencil designs. |
-| Add visual understanding to DSH | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | Add image Q&A, long-screenshot OCR, UI restoration, grounding, and pixel diffs. |
+| Add visual understanding to DSH | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | Add image Q&A, long-screenshot OCR, UI restoration, grounding, and pixel diffs — or bridge pure-text models to image input via a Luna transcription adapter. |
 | Add a companion to the workspace | [whale-girl](https://github.com/vlln/whale-girl) | A draggable companion with feeding, play, and persistent progression. |
 | Migrate chat histories from other tools into DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | Full-fidelity import of Claude Code / Codex / ChatGPT / Cursor transcripts (tools + thinking) as resumable DSH sessions. |
 | Change the skin / set a custom wallpaper | [dsh-skin](https://github.com/KinGao294/dsh-skin) | One-click --dsw-alias-* palette switching plus a translucent wallpaper with opacity and blur controls (Codex-style). |
@@ -133,14 +133,14 @@ An all-in-one bundle for the DSH Web UI — task board, git graph, a side panel,
 
 | Project | Description | Created |
 | --- | --- | --- |
-| [Aloneswork/deepseek-harness-codex-bridge](https://github.com/Aloneswork/deepseek-harness-codex-bridge) | Bidirectional MCP bridge for DeepSeek Harness and Codex collaboration | 2026-08-14 |
-| [slhssb/dsh-advisor](https://github.com/slhssb/dsh-advisor) | Independent-model advisory review for DeepSeek Harness: after each tool step, a reviewer model audits the agent's operations and injects concerns/guidance into the next step. | 2026-08-14 |
-| [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) | ADHDGoFly POS highlighting plugin for DeepSeek Harness Web: nouns green, verbs red, adjectives/adverbs purple, others gray in rendered Markdown | 2026-08-14 |
-| [kam74515-boop/dsh-everything-oauth](https://github.com/kam74515-boop/dsh-everything-oauth) | Import local Codex / Grok / Claude / OpenCode / CC Switch logins into DeepSeek Harness | 2026-08-14 |
-| [yingjunnan/dsh-deepseek-quota](https://github.com/yingjunnan/dsh-deepseek-quota) | DeepSeek API quota (balance) widget for the DSH web GUI: a floating bottom-right card showing remaining DeepSeek API balance. | 2026-08-14 |
-| [onlca/dsh-ssh](https://github.com/onlca/dsh-ssh) | DeepSeek Harness 插件:远程主机目录作为工作区,零目标主机安装 | 2026-08-14 |
-| [zeroa234/dsh-preset-minimal-windows](https://github.com/zeroa234/dsh-preset-minimal-windows) | Minimal Windows agent preset + Git Bash tool for DeepSeek Harness: gitbash & pwsh & str_replace_editor, drop-in replacement for the official minimal preset on win32 / DeepSeek Harness 极简模式（Windows）Agent 预设 + Git Bash 工具：Git Bash + PowerShell + str_replace_editor 三工具，官方 minimal 预设的 win32 平替 | 2026-08-14 |
-| [XJungit/omdp](https://github.com/XJungit/omdp) | only my DSH plugins — monorepo of DeepSeek Harness plugin bundles | 2026-08-14 |
+| [sherconan/dsh-web-recon](https://github.com/sherconan/dsh-web-recon) | 网页系统侦察 · DeepSeek Harness 插件：摸清一个网页系统怎么运作，只摸一次。抓真实接口与可访问性树，固化成可复用的作战手册。零依赖，不用 Playwright。 | 2026-08-14 |
+| [dmsobtl/dsh-skill-evolve](https://github.com/dmsobtl/dsh-skill-evolve) | DSH 插件：Agent 自我进化引擎 — 从成功会话中自动提炼可复用 skill，越用越聪明。 | 2026-08-14 |
+| [237229953-create/dsh-vision](https://github.com/237229953-create/dsh-vision) | DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, human transcript untouched. 纯文本模型自动识图桥 | 2026-08-14 |
+| [SisyphusSQ/dsh-plugins](https://github.com/SisyphusSQ/dsh-plugins) | A monorepo for composable DeepSeek Harness (DSH) plugins. | 2026-08-14 |
+| [lanshuye123/DSH-Terminal](https://github.com/lanshuye123/DSH-Terminal) | DSH WebUI 终端(Terminal)插件。可以在WebUI中获得终端模拟器。 | 2026-08-14 |
+| [dmsobtl/dsh-tool-backtest](https://github.com/dmsobtl/dsh-tool-backtest) | DSH 插件：策略回测引擎 — 定义买卖信号，跑历史数据，输出绩效指标。 | 2026-08-14 |
+| [djh2203/dsh-refined](https://github.com/djh2203/dsh-refined) | DeepSeek-Refined 的 DeepSeek Harness 移植版 为 DeepSeek Harness（DSH）前端注入 Obsidian Border 风格的 Markdown 美化与多主题配色。 | 2026-08-14 |
+| [dongsheng123132/dsh-audit-bundle](https://github.com/dongsheng123132/dsh-audit-bundle) | Content-addressed audit indexes across independent DeepSeek Harness evidence producers | 2026-08-14 |
 
 ## Why this list?
 
@@ -150,7 +150,7 @@ An all-in-one bundle for the DSH Web UI — task board, git graph, a side panel,
 - **Structured and reproducible:** curation lives in [data/curated.json](./data/curated.json), while source metadata lives in [data/repositories.json](./data/repositories.json).
 - **Continuously refreshed:** the catalog updates daily from GitHub's `dsh-plugin` topic. Current data timestamp: **2026-08-14 UTC**.
 
-The index currently covers **883** repositories across **18** primary languages. **746** declare a license, and **882** are neither archived nor disabled.
+The index currently covers **892** repositories across **19** primary languages. **759** declare a license, and **890** are neither archived nor disabled.
 
 ## Usage and safety
 

@@ -8,10 +8,12 @@ Thank you for helping maintain Awesome DSH Plugin.
 
 - 仓库必须公开，并带有 `dsh-plugin` GitHub Topic。
 - 仓库必须填写 GitHub 项目简介（description）；没有简介的仓库不予收录，补充后会在下次刷新时自动加入。
+- 仓库本身必须是可安装的 DSH 插件，而不是另一个插件目录/榜单站点（即使带了 `dsh-plugin` Topic）。明显不符合的仓库可以登记在 `data/curated.json` 的 `excluded_repos` 中并注明原因。
 - 项目说明应准确、简洁，不使用无法核实的宣传语。
 - 请披露归档、许可证缺失或明显安全风险等重要状态。
 - A repository must be public and carry the `dsh-plugin` GitHub topic.
 - A repository must have a GitHub description set; repositories without one are excluded until a description is added, then included automatically on the next refresh.
+- The repository must be an installable DSH plugin itself, not another plugin directory/leaderboard site (even if it carries the `dsh-plugin` topic). Clear mismatches can be listed with a reason in `excluded_repos` in `data/curated.json`.
 - Descriptions should be accurate and concise, without unverifiable marketing claims.
 - Important status such as archival, missing license, or evident security risk should be disclosed.
 
