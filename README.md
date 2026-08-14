@@ -17,6 +17,7 @@
 
 | 我想要…… | 推荐从这里开始 | 为什么 |
 | --- | --- | --- |
+| 想要独立的桌面客户端，而不是浏览器标签页 | [dsh-desktop](https://github.com/bruc3van/dsh-desktop) | 开箱即用的桌面体验：自动复用本机已运行的实例，或用内置运行时一键启动，无需安装 Node.js/CLI；支持远程实例连接、托盘常驻和异常恢复。 |
 | 更方便地管理和发现插件 | [plugin-registry](https://github.com/vlln/plugin-registry) | 在浏览器面板中管理 repository 插件，并提供开发引导。 |
 | 看清后台任务进度 | [dsh-task-status](https://github.com/vlln/dsh-task-status) | 在对话页显示任务进度和实时输出 tail。 |
 | 定时或按事件唤醒 Agent | [dsh-loop](https://github.com/vlln/dsh-loop) · [dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) | 覆盖周期任务，以及文件、命令、HTTP、进程和 Webhook 事件。 |
@@ -55,6 +56,12 @@
 ## 编辑推荐
 
 这里不是按 Stars 自动排名。我们优先选择解决明确问题、说明完整、仍在维护且具有代表性的项目。收录不等于安全或兼容性背书。
+
+### [dsh-desktop — DSH 的独立桌面客户端](https://github.com/bruc3van/dsh-desktop)
+
+社区维护的非官方桌面客户端，直接加载官方 Web UI：自动复用本机已运行的实例，也可用安装包内置的 dsh 运行时一键启动，无需额外安装 Node.js 或 CLI；支持智能连接、远程实例连接、托盘常驻和异常恢复。
+
+`桌面客户端` `开箱即用` `智能连接`
 
 ### [plugin-registry — 从看仓库到真正管理插件](https://github.com/vlln/plugin-registry)
 
@@ -120,14 +127,14 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 
 | 项目 | 简介 | 创建日期 |
 | --- | --- | --- |
-| [brittanistrehlowll-oss/dsh-quota-panel](https://github.com/brittanistrehlowll-oss/dsh-quota-panel) | Provider quota/balance corner panel for the dsh web surface (DeepSeek Harness plugin): server-side credential proxies plus a config-driven page badge. | 2026-08-14 |
-| [hellosky983/dsh-qrcode](https://github.com/hellosky983/dsh-qrcode) | 离线二维码生成器：DeepSeek Harness 插件，纯本地、零网络、零 shell，给模型一个 qrcode 工具 | 2026-08-14 |
-| [dmsobtl/dsh-session-analyst](https://github.com/dmsobtl/dsh-session-analyst) | 仓库暂未提供简介。 | 2026-08-14 |
-| [sunshine-lang/dsh-plugin-template](https://github.com/sunshine-lang/dsh-plugin-template) | Ready-to-publish DeepSeek Harness plugin skeleton: bundle format, tool DSL, config, tests, and a scaffold script | 2026-08-14 |
-| [aryswisnu/dsh-composition-check](https://github.com/aryswisnu/dsh-composition-check) | Evidence-backed compatibility checks for DeepSeek Harness plugin stacks | 2026-08-14 |
-| [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) | Steam Workshop-style in-app plugin browser for DeepSeek Harness (DSH) Web UI - zero-server: search, hot/newest/trending windows, Chinese keyword search, bilingual translation, plugin-signature filtering, one-click install/update | 2026-08-14 |
-| [dshiq04/dsh-notify](https://github.com/dshiq04/dsh-notify) | 面向deepseek harness的消息通知插件 | 2026-08-14 |
-| [dongsheng123132/dsh-policy-drift-proof](https://github.com/dongsheng123132/dsh-policy-drift-proof) | Content-addressed, value-redacted policy drift evidence for DeepSeek Harness | 2026-08-14 |
+| [zhangzheng25/deepseek_harness_desktop](https://github.com/zhangzheng25/deepseek_harness_desktop) | 仓库暂未提供简介。 | 2026-08-14 |
+| [Aloneswork/deepseek-harness-codex-bridge](https://github.com/Aloneswork/deepseek-harness-codex-bridge) | Bidirectional MCP bridge for DeepSeek Harness and Codex collaboration | 2026-08-14 |
+| [slhssb/dsh-advisor](https://github.com/slhssb/dsh-advisor) | Independent-model advisory review for DeepSeek Harness: after each tool step, a reviewer model audits the agent's operations and injects concerns/guidance into the next step. | 2026-08-14 |
+| [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) | ADHDGoFly POS highlighting plugin for DeepSeek Harness Web: nouns green, verbs red, adjectives/adverbs purple, others gray in rendered Markdown | 2026-08-14 |
+| [kam74515-boop/dsh-everything-oauth](https://github.com/kam74515-boop/dsh-everything-oauth) | Import local Codex / Grok / Claude / OpenCode / CC Switch logins into DeepSeek Harness | 2026-08-14 |
+| [yingjunnan/dsh-deepseek-quota](https://github.com/yingjunnan/dsh-deepseek-quota) | DeepSeek API quota (balance) widget for the DSH web GUI: a floating bottom-right card showing remaining DeepSeek API balance. | 2026-08-14 |
+| [onlca/dsh-ssh](https://github.com/onlca/dsh-ssh) | DeepSeek Harness 插件:远程主机目录作为工作区,零目标主机安装 | 2026-08-14 |
+| [pangzi499/dsh-balance-stats](https://github.com/pangzi499/dsh-balance-stats) | 仓库暂未提供简介。 | 2026-08-14 |
 
 ## 为什么维护这个列表？
 
