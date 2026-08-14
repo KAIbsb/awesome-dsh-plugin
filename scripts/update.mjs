@@ -71,7 +71,8 @@ function normalizeRepository(repo) {
 
 async function refreshSnapshot() {
   const first = await fetchPage(1);
-  const pageCount = Math.ceil(first.total_count / 100);
+  // The GitHub Search API caps results at 1000 (10 pages of 100), regardless of total_count.
+  const pageCount = Math.min(Math.ceil(first.total_count / 100), 10);
   const remaining = await Promise.all(
     Array.from({ length: Math.max(0, pageCount - 1) }, (_, index) => fetchPage(index + 2)),
   );
