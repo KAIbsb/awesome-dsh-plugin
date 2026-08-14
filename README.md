@@ -4,12 +4,12 @@
 > 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-1000-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-883-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全部 1000 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [浏览全部 883 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
@@ -127,14 +127,14 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 
 | 项目 | 简介 | 创建日期 |
 | --- | --- | --- |
-| [zhangzheng25/deepseek_harness_desktop](https://github.com/zhangzheng25/deepseek_harness_desktop) | 仓库暂未提供简介。 | 2026-08-14 |
 | [Aloneswork/deepseek-harness-codex-bridge](https://github.com/Aloneswork/deepseek-harness-codex-bridge) | Bidirectional MCP bridge for DeepSeek Harness and Codex collaboration | 2026-08-14 |
 | [slhssb/dsh-advisor](https://github.com/slhssb/dsh-advisor) | Independent-model advisory review for DeepSeek Harness: after each tool step, a reviewer model audits the agent's operations and injects concerns/guidance into the next step. | 2026-08-14 |
 | [zuoguyoupan2023/adhdgofly-dsh-ext](https://github.com/zuoguyoupan2023/adhdgofly-dsh-ext) | ADHDGoFly POS highlighting plugin for DeepSeek Harness Web: nouns green, verbs red, adjectives/adverbs purple, others gray in rendered Markdown | 2026-08-14 |
 | [kam74515-boop/dsh-everything-oauth](https://github.com/kam74515-boop/dsh-everything-oauth) | Import local Codex / Grok / Claude / OpenCode / CC Switch logins into DeepSeek Harness | 2026-08-14 |
 | [yingjunnan/dsh-deepseek-quota](https://github.com/yingjunnan/dsh-deepseek-quota) | DeepSeek API quota (balance) widget for the DSH web GUI: a floating bottom-right card showing remaining DeepSeek API balance. | 2026-08-14 |
 | [onlca/dsh-ssh](https://github.com/onlca/dsh-ssh) | DeepSeek Harness 插件:远程主机目录作为工作区,零目标主机安装 | 2026-08-14 |
-| [pangzi499/dsh-balance-stats](https://github.com/pangzi499/dsh-balance-stats) | 仓库暂未提供简介。 | 2026-08-14 |
+| [zeroa234/dsh-preset-minimal-windows](https://github.com/zeroa234/dsh-preset-minimal-windows) | Minimal Windows agent preset + Git Bash tool for DeepSeek Harness: gitbash & pwsh & str_replace_editor, drop-in replacement for the official minimal preset on win32 / DeepSeek Harness 极简模式（Windows）Agent 预设 + Git Bash 工具：Git Bash + PowerShell + str_replace_editor 三工具，官方 minimal 预设的 win32 平替 | 2026-08-14 |
+| [XJungit/omdp](https://github.com/XJungit/omdp) | only my DSH plugins — monorepo of DeepSeek Harness plugin bundles | 2026-08-14 |
 
 ## 为什么维护这个列表？
 
@@ -144,7 +144,7 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 - **结构化且可复现：** 推荐配置在 [data/curated.json](./data/curated.json)，原始元数据在 [data/repositories.json](./data/repositories.json)。
 - **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-14 UTC**。
 
-当前索引包含 **1000** 个仓库、**18** 种主要语言；其中 **835** 个声明了许可证，**999** 个未归档且未禁用。
+当前索引包含 **883** 个仓库、**18** 种主要语言；其中 **746** 个声明了许可证，**882** 个未归档且未禁用。
 
 ## 使用与安全
 

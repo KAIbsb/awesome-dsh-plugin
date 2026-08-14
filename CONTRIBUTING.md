@@ -7,9 +7,11 @@ Thank you for helping maintain Awesome DSH Plugin.
 ## 收录标准 / Inclusion criteria
 
 - 仓库必须公开，并带有 `dsh-plugin` GitHub Topic。
+- 仓库必须填写 GitHub 项目简介（description）；没有简介的仓库不予收录，补充后会在下次刷新时自动加入。
 - 项目说明应准确、简洁，不使用无法核实的宣传语。
 - 请披露归档、许可证缺失或明显安全风险等重要状态。
 - A repository must be public and carry the `dsh-plugin` GitHub topic.
+- A repository must have a GitHub description set; repositories without one are excluded until a description is added, then included automatically on the next refresh.
 - Descriptions should be accurate and concise, without unverifiable marketing claims.
 - Important status such as archival, missing license, or evident security risk should be disclosed.
 
