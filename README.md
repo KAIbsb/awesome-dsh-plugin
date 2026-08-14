@@ -1,28 +1,89 @@
-# Awesome DSH Plugins
+# 🐳 Awesome DSH Plugins
 
-> 用 30 秒找到适合你的 DeepSeek Harness 插件。
-> 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
+> 用 30 秒为你的 DeepSeek Harness（DSH）找到合适的插件。
+> 这不是又一个仓库清单：2000+ 个打着 `dsh-plugin` 标签的仓库里，我们只把「解决真实问题、说得清楚、还在维护」的那部分带到你面前——并告诉你每个插件适合谁、从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbruc3van%2Fawesome-dsh-plugin%2Fmain%2Fdata%2Frepositories.json&query=%24.total_count&label=repositories&color=2563eb)
+[![Repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbruc3van%2Fawesome-dsh-plugin%2Fmain%2Fdata%2Frepositories.json&query=%24.total_count&label=repositories&color=2563eb)](./CATALOG.md)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
+[![Refreshed](https://img.shields.io/github/last-commit/bruc3van/awesome-dsh-plugin?label=refreshed&color=10b981)](./CATALOG.md)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全量目录](./CATALOG.md) · [Star Top 100](./TOP100.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [全量目录](./CATALOG.md) · [Star Top 100](./TOP100.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
-## 你想让 DSH 做什么？
+## 这个列表怎么用
+
+本仓库分成三层，按你需要的信息深度取用：
+
+| 你想要…… | 直接去哪里 |
+| --- | --- |
+| 30 秒选出一个插件 | 继续往下读：[场景选型](#-我想让-dsh-做什么) 和 [新手套装](#-新手从这里开始) |
+| 按热度或分类翻完整清单 | [TOP100.md](./TOP100.md)（热度榜）· [CATALOG.md](./CATALOG.md)（全量目录） |
+| 用程序消费插件数据 | [data/repositories.json](./data/repositories.json)——每日自动快照，含星数、许可证、活跃度等元数据 |
+| 收录你自己的插件 | 不需要给我们提 PR：仓库加上 `dsh-plugin` Topic 即会自动进入全量目录，详见[文末](#-推荐或修正插件) |
+
+## 🗺️ 生态全景
+
+截至 2026-08-14 共收录 **1761** 个仓库。它们长这样：
+
+```mermaid
+mindmap
+  root((DSH 插件生态 1761))
+    Agent 自动化与工作流 · 575
+      定时循环与事件唤醒
+      多 Agent 协作
+      长期记忆与自我进化
+      审批、预算与检查点
+    界面与体验 · 354
+      桌面客户端与终端 TUI
+      侧边栏工作台
+      皮肤与桌面宠物
+      通知与输入增强
+    网页与浏览器 · 258
+      浏览器桥接与页面操作
+      网页搜索与引用
+      归档与网页取证
+    生态与资源 · 119
+      插件市场与注册表
+      开发模板与脚手架
+      教程与手册
+    设计媒体与视觉 · 107
+      图片理解与 OCR
+      设计画布与 UI 还原
+    开发者工具 · 106
+      Git 与 diff
+      沙箱与运行时
+      调试与诊断
+    知识与研究 · 99
+      知识库与跨会话记忆
+      深度研究
+      学术与数学
+    实用工具与其他 · 94
+      文件与编码
+      格式转换
+    集成与分享 · 49
+      会话导入与分享
+      远程访问
+      IM 与外部集成
+```
+
+按分类浏览每个分类下的全部项目，见 [CATALOG.md](./CATALOG.md)。
+
+## 🎯 我想让 DSH 做什么？
+
+从你的问题出发，而不是从分类出发。找到最接近的一行，点进去就是答案：
 
 | 我想要…… | 推荐从这里开始 | 为什么 |
 | --- | --- | --- |
-| 想要独立的桌面客户端，而不是浏览器标签页 | [dsh-desktop](https://github.com/bruc3van/dsh-desktop) · [deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | dsh-desktop 开箱即用：自动复用本机已运行的实例，或用内置运行时一键启动，无需安装 Node.js/CLI，支持远程连接、托盘常驻与异常恢复；deepseek-harness-desktop 是生态内星数最高的桌面端（1200+ Star，macOS/Windows，服务启动与窗口整合）。 |
+| 想要独立的桌面客户端，而不是浏览器标签页 | [dsh-desktop](https://github.com/bruc3van/dsh-desktop) · [deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | dsh-desktop 开箱即用：自动复用本机已运行的实例，或用内置运行时一键启动，无需安装 Node.js/CLI，支持远程连接、托盘常驻与异常恢复；deepseek-harness-desktop 是生态内星数最高的桌面端（1.3k+ Star，macOS/Windows，服务启动与窗口整合）。 |
 | 更方便地管理和发现插件 | [plugin-registry](https://github.com/vlln/plugin-registry) · [dsh-market](https://github.com/dsh-market/dsh-market) | plugin-registry 在浏览器面板中管理 repository 插件并提供开发引导；dsh-market 把插件市场做进 DSH 界面，浏览、搜索、一键安装。 |
 | 把现有业务代码转成 Agent 可调用能力 | [Code2Skill](https://github.com/leechen298/Code2Skill) | 从用户授权的前端、后端或全栈源码生成 Function、MCP Tools、业务 Skills 和离线测试，并可作为 DSH Bundle 安装。 |
 | 看清后台任务进度 | [dsh-task-status](https://github.com/vlln/dsh-task-status) | 在对话页显示任务进度和实时输出 tail。 |
 | 看清上下文窗口里装了什么 | [dsh-context](https://github.com/bowenliang123/dsh-context) | 在 Web UI 增加 Context 面板，展示上下文由什么构成、如何演化，辅助把握 token 控制与裁剪时机。 |
 | 定时或按事件唤醒 Agent | [dsh-loop](https://github.com/vlln/dsh-loop) · [dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) | 覆盖周期任务，以及文件、命令、HTTP、进程和 Webhook 事件。 |
-| 请求经常因网络波动或超时中断，不想每次都手动补一句「继续」 | [dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) | 监听实时事件流，回合因非人为原因失败后自动补发「继续」：错误分类只恢复临时性故障，自适应退避避免对故障上游狂轰滥炸，支持模板化继续文本与浏览器通知，参数可在插件设置卡片中调整。 |
+| 请求经常因网络波动或超时中断，不想每次手动补一句「继续」 | [dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) | 回合因非人为原因失败后自动补发「继续」：错误分类只恢复临时性故障，自适应退避避免轰炸故障上游，继续文本可模板化，参数在插件设置卡片中调整。 |
 | 更顺手地阅读和操作长对话 | [dsh-navbar](https://github.com/vlln/dsh-navbar) · [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) | 快速跳转用户消息节点，并像 Codex 一样选中文本批注。 |
 | 像 Codex 一样用 @ 引用工作区文件 | [dsh-at-file](https://github.com/omdsh-dev/dsh-at-file) | 在输入框内按 @ 搜索工作区文件并把内容附进 prompt，免去手动复制粘贴。 |
 | 在对话中生成交互式界面 | [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 在回复中渲染图表、表单、测验、Mermaid 和 3D 场景。 |
@@ -42,184 +103,86 @@
 | 让外部 Agent 驱动 Harness 执行任务 | [dsh-harness-mcp-server](https://github.com/chushixixin/dsh-harness-mcp-server) | 在 Harness 内部启动 MCP server，让任意 MCP 客户端（如 Hermes）下发任务给 Harness 执行，实现「大脑 + 胳膊」协作。 |
 | 从外部设备安全访问本机 Harness | [dsh-remote](https://github.com/flymysql/dsh-remote) | 打印当前实例的精确连接命令：SSH 本地转发、autossh 保活、反向隧道（NAT 友好）与带 --trusted-host 的反向代理，设置页一键复制；遵循官方安全设计，不碰 0.0.0.0。 |
 
-## 第一次使用 DSH 插件？
+## 🚀 新手从这里开始
 
 不需要一次装很多。先选一个与你当前问题最接近的组合：
 
-### 日常体验套装
+| 套装 | 适合 | 组合 |
+| --- | --- | --- |
+| 日常体验 | 第一次装插件，先解决管理、状态和导航 | [plugin-registry](https://github.com/vlln/plugin-registry) · [dsh-task-status](https://github.com/vlln/dsh-task-status) · [dsh-navbar](https://github.com/vlln/dsh-navbar) |
+| 自动化 | 定时循环 + 事件驱动唤醒，长时间无人值守任务 | [dsh-loop](https://github.com/vlln/dsh-loop) · [dsh-sentinel](https://github.com/fuhefei/dsh-sentinel) |
+| 视觉与搜索 | 让纯文本模型看得见、搜得到 | [modlens](https://github.com/liustack/modlens) · [modsearch](https://github.com/liustack/modsearch) · [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) |
+| 创作与界面 | 生成式 UI、真实设计画布与视觉理解 | [dsh-genui](https://github.com/omdsh-dev/dsh-genui) · [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) · [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) |
+| 记忆与持续运行 | 跨会话记忆 + 中断自动续跑的无人值守项目 | [dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) · [dsh-mneme](https://github.com/modusensus/dsh-mneme) · [dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue) |
 
-先解决插件管理、后台状态和长对话导航这三个最常见的问题。
+## ⭐ 编辑精选
 
-[plugin-registry](https://github.com/vlln/plugin-registry) · [dsh-task-status](https://github.com/vlln/dsh-task-status) · [dsh-navbar](https://github.com/vlln/dsh-navbar)
+**这里不按星数排名。** 我们优先选择解决明确问题、说明完整、仍在维护且具有代表性的项目——所以你会看到 1.2k Star 的项目，也会看到 4 Star 但无可替代的项目。收录不等于安全或兼容性背书。
 
-### 自动化套装
+### 🖥️ 桌面与终端
 
-同时拥有定时循环和事件驱动唤醒，适合长时间、无人值守任务。
+- **[dsh-desktop](https://github.com/bruc3van/dsh-desktop)**（⭐ 20）— 社区维护的非官方桌面客户端，直接加载官方 Web UI：自动复用本机已运行的实例，或用内置 dsh 运行时一键启动，无需额外安装 Node.js/CLI；支持智能连接、远程实例、托盘常驻和异常恢复。 `桌面客户端` `开箱即用` `智能连接`
+- **[deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop)**（⭐ 1.3k）— 生态内星数最高的桌面端：服务启动与窗口整合，macOS/Windows 开箱可用。 `桌面客户端` `跨平台`
+- **[dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI)**（⭐ 835）— Claude Code 风格的全屏交互终端：像素鲸鱼顶栏、实时状态行、思考流式展开、双击 Esc 回滚、上下文进度条与 TPS 仪表，npm 一键安装。 `终端 TUI` `全屏交互` `CLI 优先`
+- **[dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui)**（⭐ 132）— 终端 UI 之外内置 TDD 与「证据门」工作流，把一次性多 Agent 调度升级为可治理的工程过程。 `终端 TUI` `TDD` `证据门`
 
-[dsh-loop](https://github.com/vlln/dsh-loop) · [dsh-sentinel](https://github.com/fuhefei/dsh-sentinel)
+### 🧰 界面工作台
 
-### 视觉与搜索套装
+- **[DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar)**（⭐ 709）— 目前最受欢迎的侧边栏增强：内置文件渲染编辑、终端、Git 与子代理，并支持第三方扩展注册新 Tab，把侧边栏变成日常开发主界面。 `侧边栏` `工作台` `可扩展`
+- **[dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui)**（⭐ 1.8k）— 一站式功能合集：任务看板、Git 关系图、侧边面板、远程移动端界面、桌面宠物、实时 Token 用量统计与皮肤中心，一次安装覆盖多个常见界面诉求。 `功能合集` `皮肤中心` `移动端`
 
-让纯文本模型看得见、搜得到：图片结构化证据 + 带引用的网页搜索，配合原生视觉工具箱覆盖更多视觉任务。
+### 👀 让模型看得见、搜得到
 
-[modlens](https://github.com/liustack/modlens) · [modsearch](https://github.com/liustack/modsearch) · [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)
+- **[modlens](https://github.com/liustack/modlens)**（⭐ 1.2k）— 生态内 Star 最高的第三方插件（MIT）：粘贴图片即可得到带 OCR、布局与语义的结构化 JSON 证据，让纯文本模型也能可靠地看图；配套 Web UI。 `视觉` `OCR` `结构化证据`
+- **[modsearch](https://github.com/liustack/modsearch)**（⭐ 86）— 让 DSH 直接搜索网页和 X，返回带引用的结构化 JSON 证据（搜索/抓取/引用），纯文本模型也能基于证据回答；与 modlens 组成「看」+「搜」组合。 `搜索` `引用` `证据`
+- **[dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)**（⭐ 308）— 覆盖图片问答、长截图 OCR、UI 还原、视觉定位、像素对比和 Artifacts，适合前端与视觉任务。 `视觉理解` `OCR` `UI 还原`
 
-### 创作与界面套装
+### 🧠 记忆与无人值守
 
-让 Agent 生成交互式 UI、操作真实设计画布，并理解视觉内容。
+- **[dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve)**（⭐ 50）— 纯插件实现的五轨长期记忆：git 分支感知、回合内自我审查、技能自我进化与技能管理器、四轨待办与会话搜索——零核心修改、零运行时依赖，卸载即净。 `长期记忆` `自进化` `零依赖`
+- **[dsh-mneme](https://github.com/modusensus/dsh-mneme)**（⭐ 8）— SQLite + 可人工编辑的 Markdown 镜像，记忆不再黑盒；autoDream 后台自动去重/合并/裁决，越用越精炼。记忆这回事不该让 agent 一个人说了算。 `记忆主权` `跨会话记忆` `autoDream`
+- **[dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue)**（⭐ 10）— 网络波动、超时或宿主崩溃导致回合失败后，自动发送「继续」续跑：错误分类（认证/余额等永久性错误跳过）、自适应退避、模板化继续文本与浏览器通知，无人值守也能自己爬起来。 `自动续跑` `无人值守` `错误分类`
+- **[dsh-sentinel](https://github.com/fuhefei/dsh-sentinel)**（⭐ 4）— 监听文件、命令、HTTP、进程或 Webhook，在条件满足时唤醒 DSH，让 Loop 从定时升级为事件驱动。 `事件驱动` `持久监控` `自动化`
 
-[dsh-genui](https://github.com/omdsh-dev/dsh-genui) · [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) · [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit)
+### ✍️ 对话体验细节
 
-### 记忆与持续运行套装
+- **[dsh-at-file](https://github.com/omdsh-dev/dsh-at-file)**（⭐ 117）— 在输入框里按 @ 搜索工作区文件，把内容直接附进 prompt，不用手动复制粘贴；官方 bundle，零核心改动。 `@file` `工作区` `输入体验`
+- **[dsh-annotation](https://github.com/omdsh-dev/dsh-annotation)**（⭐ 39）— 选中文字、添加批注并随消息发送，回复可以逐条对照 Annotation，适合审稿、代码评审和精确反馈。 `批注` `精确反馈` `零核心改动`
+- **[dsh-navbar](https://github.com/vlln/dsh-navbar)**（⭐ 15）— 长对话里快速跳转到任意用户消息节点。 `长对话` `导航`
+- **[dsh-task-status](https://github.com/vlln/dsh-task-status)**（⭐ 7）— 把后台任务进度和实时输出 tail 放回对话页面，尤其适合构建、下载、测试等长时间命令。 `后台任务` `实时输出` `可观察性`
+- **[dsh-notification](https://github.com/omdsh-dev/dsh-notification)**（⭐ 38）— 回合完成后发送桌面通知，按成功/失败等结果分别控制，支持关键词包含/排除规则。 `桌面通知` `无人值守` `关键词规则`
 
-沉淀可审计的跨会话记忆，并在回合中断后自动续跑，适合长时间无人值守项目。
+### 🎨 创作与乐趣
 
-[dsh-memory-evolve](https://github.com/csyangwen/dsh-memory-evolve) · [dsh-mneme](https://github.com/modusensus/dsh-mneme) · [dsh-auto-continue](https://github.com/HsiangNianian/dsh-auto-continue)
+- **[dsh-genui](https://github.com/omdsh-dev/dsh-genui)**（⭐ 72）— 在对话中直接呈现图表、表单、测验、Mermaid、3D 场景，并把用户操作重新送回模型。 `生成式 UI` `交互` `可视化`
+- **[DSH OpenPencil](https://github.com/ZSeven-W/dsh-openpencil)**（⭐ 65）— 连接 DSH 与 OpenPencil，让 Agent 理解画布结构、节点和组件关系，直接创建、修改、预览并验证可编辑的多页面设计，而不是只返回一张图片。 `设计画布` `多页面` `可编辑`
+- **[whale-girl](https://github.com/vlln/whale-girl)**（⭐ 121）— 可拖拽、投喂和玩耍的 DSH Web GUI 桌面宠物，为长时间 Agent 工作增加一点陪伴感。 `桌面宠物` `陪伴` `Web UI`
 
-## 编辑推荐
+### 🌱 生态入口
 
-这里不是按 Stars 自动排名。我们优先选择解决明确问题、说明完整、仍在维护且具有代表性的项目。收录不等于安全或兼容性背书。
+- **[plugin-registry](https://github.com/vlln/plugin-registry)**（⭐ 34）— 面向普通用户的可视化插件管理入口，同时给开发者提供 make-dsh-plugin 引导。适合第一次进入 DSH 插件生态的人。 `新手友好` `插件管理` `开发引导`
 
-### [dsh-desktop — DSH 的独立桌面客户端](https://github.com/bruc3van/dsh-desktop)
+## 🏆 社区热度榜
 
-社区维护的非官方桌面客户端，直接加载官方 Web UI：自动复用本机已运行的实例，也可用安装包内置的 dsh 运行时一键启动，无需额外安装 Node.js 或 CLI；支持智能连接、远程实例连接、托盘常驻和异常恢复。
+按 Star 排序的社区热度参考，经人工复核，数据取自 2026-08-14 快照（以上项目当日均有推送）；蹭 `dsh-plugin` Topic 的非插件仓库已剔除，清单见 [data/curated.json](./data/curated.json)。完整榜单见 [TOP100.md](./TOP100.md)。排名反映受欢迎程度，不代表质量、兼容性或安全背书。
 
-`桌面客户端` `开箱即用` `智能连接`
+| # | 项目 | ⭐ Stars | License |
+| ---: | --- | ---: | --- |
+| 1 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 1785 | Apache-2.0 |
+| 2 | [anywhere-labs/deepseek-harness-desktop](https://github.com/anywhere-labs/deepseek-harness-desktop) | 1266 | MIT |
+| 3 | [liustack/modlens](https://github.com/liustack/modlens) | 1208 | MIT |
+| 4 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 835 | MIT |
+| 5 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 709 | MIT |
+| 6 | [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 538 | — |
+| 7 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 321 | — |
+| 8 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 308 | MIT |
+| 9 | [morluto/rea](https://github.com/morluto/rea) | 308 | MIT |
+| 10 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 231 | MIT |
+| 11 | [Electricitysheep/dsh-handbook](https://github.com/Electricitysheep/dsh-handbook) | 181 | — |
+| 12 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 163 | MIT |
+| 13 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 132 | Apache-2.0 |
 
-### [plugin-registry — 从看仓库到真正管理插件](https://github.com/vlln/plugin-registry)
-
-面向普通用户的可视化插件管理入口，同时给开发者提供 make-dsh-plugin 引导。适合第一次进入 DSH 插件生态的人。
-
-`新手友好` `插件管理` `开发引导`
-
-### [DSH-better-sidebar — 侧边栏的完整工作台](https://github.com/omdsh-dev/DSH-better-sidebar)
-
-目前最受欢迎的侧边栏增强（460+ Star）：内置文件渲染编辑、终端、Git 与子代理，并支持第三方扩展注册新 Tab，把侧边栏变成日常开发的主界面。
-
-`侧边栏` `工作台` `可扩展`
-
-### [dsh-sentinel — 让 Loop 从定时升级为事件驱动](https://github.com/fuhefei/dsh-sentinel)
-
-监听文件、命令、HTTP、进程或 Webhook，在条件满足时唤醒 DSH。适合自动化监控、长任务和无人值守工作流。
-
-`事件驱动` `持久监控` `自动化`
-
-### [dsh-task-status — 不再猜后台任务跑到哪了](https://github.com/vlln/dsh-task-status)
-
-把后台任务进度和实时输出 tail 放回对话页面，尤其适合构建、下载、测试等长时间命令。
-
-`后台任务` `实时输出` `可观察性`
-
-### [dsh-notification — 回合完成桌面通知](https://github.com/omdsh-dev/dsh-notification)
-
-回合完成后发送桌面通知，按成功/失败等结果分别控制，支持关键词包含/排除规则；长时间任务不用一直盯着页面。
-
-`桌面通知` `无人值守` `关键词规则`
-
-### [dsh-annotation — 像 Codex 一样批注对话内容](https://github.com/omdsh-dev/dsh-annotation)
-
-选中文字、添加批注并随消息发送，回复可以逐条对照 Annotation，适合审稿、代码评审和精确反馈。
-
-`批注` `精确反馈` `零核心改动`
-
-### [dsh-at-file — Codex 风格的 @ 文件引用](https://github.com/omdsh-dev/dsh-at-file)
-
-在输入框里按 @ 搜索工作区文件，把内容直接附进 prompt，不用手动复制粘贴；官方 bundle，零核心改动，与 navbar/annotation 一起补全长对话体验。
-
-`@file` `工作区` `输入体验`
-
-### [dsh-genui — 让回复变成可交互界面](https://github.com/omdsh-dev/dsh-genui)
-
-在对话中直接呈现图表、表单、测验、Mermaid、3D 场景，并把用户操作重新送回模型。
-
-`生成式 UI` `交互` `可视化`
-
-### [DSH OpenPencil — 让 Agent 操作真实设计画布](https://github.com/ZSeven-W/dsh-openpencil)
-
-连接 DSH 与 OpenPencil，让 Agent 理解画布结构、节点和组件关系，直接创建、修改、预览并验证可编辑的多页面设计，而不是只返回一张图片。
-
-`设计画布` `多页面` `可编辑`
-
-### [modlens — 把图片变成结构化证据的视觉插件](https://github.com/liustack/modlens)
-
-生态内 Star 最高的第三方插件（900+ Star，MIT）：粘贴图片即可得到带 OCR、布局与语义的结构化 JSON 证据，让纯文本模型也能可靠地看图；配套 Web UI，与 modsearch 同一作者。
-
-`视觉` `OCR` `结构化证据`
-
-### [modsearch — 网页搜索与引用证据桥](https://github.com/liustack/modsearch)
-
-让 DSH 直接搜索网页和 X，返回带引用的结构化 JSON 证据（搜索/抓取/引用），纯文本模型也能基于证据回答；与 modlens 组成「看」+「搜」组合。
-
-`搜索` `引用` `证据`
-
-### [dsh-vision-toolkit — 给纯文本模型补上视觉工具箱](https://github.com/Anionex/dsh-vision-toolkit)
-
-覆盖图片问答、长截图 OCR、UI 还原、视觉定位、像素对比和 Artifacts，适合前端与视觉任务。
-
-`视觉理解` `OCR` `UI 还原`
-
-### [whale-girl — 陪你 Vibe Coding 的鲸鱼娘](https://github.com/vlln/whale-girl)
-
-可拖拽、投喂和玩耍的 DSH Web GUI 桌面宠物，为长时间 Agent 工作增加一点陪伴感。
-
-`桌面宠物` `陪伴` `Web UI`
-
-### [dsh-mneme — 记忆主权还给你：可读可改的跨会话记忆](https://github.com/modusensus/dsh-mneme)
-
-SQLite + 可人工编辑的 Markdown 镜像，记忆不再黑盒；autoDream 后台自动去重/合并/裁决，越用越精炼。记忆这回事不该让 agent 一个人说了算。
-
-`记忆主权` `跨会话记忆` `autoDream`
-
-### [dsh-memory-evolve — 跨会话记忆与后台自我进化](https://github.com/csyangwen/dsh-memory-evolve)
-
-纯插件实现的五轨长期记忆：git 分支感知、回合内自我审查、技能自我进化与技能管理器、四轨待办与会话搜索——零核心修改、零运行时依赖，卸载即净。
-
-`长期记忆` `自进化` `零依赖`
-
-### [dsh-TUI — 给 DSH 补上全屏终端体验](https://github.com/ccch1mneyyy/dsh-TUI)
-
-Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条与 TPS 仪表，npm 一键安装，为偏爱 CLI 的用户补上 DSH 官方尚缺的 TUI 体验。
-
-`终端 TUI` `全屏交互` `CLI 优先`
-
-### [dsh-tianshu-tui — 终端 UI + 工程证据门工作流](https://github.com/huiliyi37/dsh-tianshu-tui)
-
-官方 Harness 上的交互式终端 UI（Apache-2.0）：在 TUI 之外内置 TDD 与「证据门」等工作流，把一次性多 Agent 调度升级为可治理的工程过程。
-
-`终端 TUI` `TDD` `证据门`
-
-### [dsh-web-ui — DSH Web UI 插件与皮肤合集](https://github.com/zhu1090093659/dsh-web-ui)
-
-一站式功能合集：任务看板、Git 关系图、侧边面板、远程移动端界面、桌面宠物、实时 Token 用量统计与皮肤中心，一次安装覆盖多个常见的界面与体验诉求。注意：仓库未声明许可证。
-
-`功能合集` `皮肤中心` `移动端`
-
-### [dsh-auto-continue — 请求中断后自动「继续」](https://github.com/HsiangNianian/dsh-auto-continue)
-
-网络波动、超时或宿主崩溃导致回合失败后，自动向会话发送「继续」续跑：错误分类（认证/余额等永久性错误跳过）、自适应退避、模板化继续文本与浏览器通知，全部可在插件设置卡片中调整，无人值守也能自己爬起来。
-
-`自动续跑` `无人值守` `错误分类`
-
-## 社区热度榜（Star 排序）
-
-按 Star 排序的社区热度参考，经人工复核后不定期更新；蹭 `dsh-plugin` Topic 的非插件仓库已剔除（清单见 [data/curated.json](./data/curated.json)）。完整榜单见 [TOP100.md](./TOP100.md)；排名反映受欢迎程度，不代表质量、兼容性或安全背书。
-
-| # | 项目 | ⭐ Stars | License | 更新 |
-| ---: | --- | ---: | --- | --- |
-| 1 | [zhu1090093659/dsh-web-ui](https://github.com/zhu1090093659/dsh-web-ui) | 1126 | — | 2026-08-14 |
-| 2 | [liustack/modlens](https://github.com/liustack/modlens) | 930 | MIT | 2026-08-14 |
-| 3 | [ccch1mneyyy/dsh-TUI](https://github.com/ccch1mneyyy/dsh-TUI) | 580 | MIT | 2026-08-14 |
-| 4 | [omdsh-dev/DSH-better-sidebar](https://github.com/omdsh-dev/DSH-better-sidebar) | 466 | MIT | 2026-08-14 |
-| 5 | [Small-tailqwq/dsh-deep-whale](https://github.com/Small-tailqwq/dsh-deep-whale) | 330 | — | 2026-08-14 |
-| 6 | [morluto/rea](https://github.com/morluto/rea) | 290 | MIT | 2026-08-14 |
-| 7 | [Anionex/dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 254 | MIT | 2026-08-14 |
-| 8 | [Nagi-ovo/dsh-ads](https://github.com/Nagi-ovo/dsh-ads) | 240 | — | 2026-08-14 |
-| 9 | [NanmiCoder/dsh-agent-teams](https://github.com/NanmiCoder/dsh-agent-teams) | 169 | — | 2026-08-14 |
-| 10 | [hust-open-atom-club/oh-dsh](https://github.com/hust-open-atom-club/oh-dsh) | 119 | BSD-3-Clause | 2026-08-14 |
-| 11 | [Electricitysheep/dsh-handbook](https://github.com/Electricitysheep/dsh-handbook) | 105 | — | 2026-08-14 |
-| 12 | [huiliyi37/dsh-tianshu-tui](https://github.com/huiliyi37/dsh-tianshu-tui) | 98 | Apache-2.0 | 2026-08-14 |
-
-## 最近加入生态
+## 🆕 最近加入生态
 
 人工筛选的近期新项目，不定期更新：
 
@@ -234,23 +197,32 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 | [pineapple880066/dsh-desktop-pets](https://github.com/pineapple880066/dsh-desktop-pets) | Codex-style desktop pets for DeepSeek Harness (dsh-plugin) | 2026-08-14 |
 | [sherconan/dsh-web-recon](https://github.com/sherconan/dsh-web-recon) | 网页系统侦察 · DeepSeek Harness 插件：摸清一个网页系统怎么运作，只摸一次。抓真实接口与可访问性树，固化成可复用的作战手册。零依赖，不用 Playwright。 | 2026-08-14 |
 
-## 为什么维护这个列表？
+## 🔍 我们如何维护这个列表
 
-- **面向使用者，而不是爬虫：** 从“我想完成什么”出发，而不是让你阅读几百行仓库名称。
-- **人工推荐 + 全量索引：** 首页提供选择建议，[CATALOG.md](./CATALOG.md) 保留完整 Topic 快照。
-- **剔除蹭热度条目：** 带 `dsh-plugin` Topic 但并非 DSH 插件的仓库（平台本体、其他 Agent 工具、同名目录站等）不计入目录与榜单，理由记录在 [data/curated.json](./data/curated.json)。
-- **中文默认，中英双语：** 普通用户可以直接理解，英文读者也有独立入口。
+- **面向使用者，而不是爬虫：** 从「我想完成什么」出发组织首页，而不是让你阅读几百行仓库名称。
+- **人工推荐 + 全量索引分层：** 首页只放经过人工筛选的推荐；[CATALOG.md](./CATALOG.md) 保留完整 Topic 快照，谁都不会被漏掉。
 - **数据自动、页面人工：** 全量目录与原始快照每天自动刷新；首页推荐与榜单由人工参考 [data/repositories.json](./data/repositories.json) 复核后修改，避免刷星、蹭 Topic 等被污染的接口数据直接改写本页。
+- **剔除蹭热度条目：** 带 `dsh-plugin` Topic 但并非 DSH 插件的仓库（平台本体、其他 Agent 工具、同名目录站等）不计入目录与榜单，理由逐条记录在 [data/curated.json](./data/curated.json)，可随时复查与质疑。
+- **中文默认，中英双语：** 普通用户可以直接理解，英文读者也有独立入口。
 
 截至 2026-08-14，全量目录收录 **1761** 个仓库、**17** 种主要语言；其中 **1486** 个声明了许可证，**1758** 个未归档且未禁用（目录每日自动刷新，最新统计以 [CATALOG.md](./CATALOG.md) 为准）。
 
-## 使用与安全
+## ⚠️ 使用与安全
 
-第三方插件可能读取会话、文件、网络或系统资源。安装前请检查源码、权限、许可证、安装方式和最近更新情况，并优先在隔离环境中试用。本列表仅做发现与整理，不代表 DSH 官方认可。
+第三方插件可能读取会话、文件、网络或系统资源。安装前请检查源码、权限、许可证、安装方式和最近更新情况，并优先在隔离环境中试用。本列表仅做发现与整理，不代表 DSH 官方认可，收录也不构成安全或兼容性背书。
 
-## 推荐或修正插件
+## 🤝 推荐或修正插件
 
-发现遗漏、分类不准确或说明过时？欢迎提交 Issue 或 Pull Request。公开仓库只要带有 `dsh-plugin` Topic 且确实是 DSH 插件，就会自动进入全量目录（蹭 Topic 的条目会被剔除）；首页的场景推荐、编辑推荐与榜单为人工维护页面，修改请直接编辑对应 Markdown 并附上理由。详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+发现遗漏、分类不准确或说明过时？欢迎提交 Issue 或 Pull Request：
+
+- **收录你的插件：** 公开仓库只要带上 `dsh-plugin` Topic 且确实是 DSH 插件，就会在每日刷新时自动进入全量目录——**不需要给我们提 PR**。蹭 Topic 的条目会被剔除，理由记录在 [data/curated.json](./data/curated.json)。
+- **上首页推荐：** 首页的场景推荐、编辑推荐与榜单为人工维护页面，提 Issue 告诉我们它解决什么问题、适合谁，或直接编辑对应 Markdown 并附上理由。
+
+详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+
+## 📈 Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=bruc3van/awesome-dsh-plugin&type=Date)](https://star-history.com/#bruc3van/awesome-dsh-plugin&Date)
 
 ## License
 
