@@ -13,6 +13,13 @@
   },
   "scenarios": [
     {
+      "goal_zh": "想要独立的桌面客户端，而不是浏览器标签页",
+      "goal_en": "Run DSH as a standalone desktop app, not a browser tab",
+      "repos": ["bruc3van/dsh-desktop"],
+      "why_zh": "开箱即用的桌面体验：自动复用本机已运行的实例，或用内置运行时一键启动，无需安装 Node.js/CLI；支持远程实例连接、托盘常驻和异常恢复。",
+      "why_en": "An out-of-the-box desktop experience: auto-reuse a running local instance or launch the bundled runtime with no Node.js/CLI install required, plus remote-instance connections, tray residency, and crash recovery."
+    },
+    {
       "goal_zh": "更方便地管理和发现插件",
       "goal_en": "Manage and discover plugins",
       "repos": ["vlln/plugin-registry"],
@@ -121,6 +128,15 @@
     }
   ],
   "editor_picks": [
+    {
+      "repo": "bruc3van/dsh-desktop",
+      "title_zh": "dsh-desktop — DSH 的独立桌面客户端",
+      "title_en": "dsh-desktop — a standalone desktop client for DSH",
+      "summary_zh": "社区维护的非官方桌面客户端，直接加载官方 Web UI：自动复用本机已运行的实例，也可用安装包内置的 dsh 运行时一键启动，无需额外安装 Node.js 或 CLI；支持智能连接、远程实例连接、托盘常驻和异常恢复。",
+      "summary_en": "A community-maintained unofficial desktop client that loads DSH's official Web UI directly — auto-reuse a running local instance, or launch the bundled dsh runtime with no Node.js/CLI install required. Includes smart connect, remote-instance support, tray residency, and crash recovery.",
+      "labels_zh": ["桌面客户端", "开箱即用", "智能连接"],
+      "labels_en": ["desktop client", "zero-install", "smart connect"]
+    },
     {
       "repo": "vlln/plugin-registry",
       "title_zh": "plugin-registry — 从看仓库到真正管理插件",
