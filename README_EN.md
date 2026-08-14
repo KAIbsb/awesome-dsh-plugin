@@ -4,12 +4,12 @@
 > More than a repository dump: learn what each plugin solves, who it is for, and where to start.
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-913-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-1000-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[中文](./README.md) · [Browse all 913 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
+[中文](./README.md) · [Browse all 1000 plugins](./CATALOG.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
 
 **If this list helps you discover something useful, consider leaving a Star ⭐ so more DSH users can find the ecosystem.**
 
@@ -26,6 +26,9 @@
 | Add visual understanding to DSH | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | Add image Q&A, long-screenshot OCR, UI restoration, grounding, and pixel diffs. |
 | Add a companion to the workspace | [whale-girl](https://github.com/vlln/whale-girl) | A draggable companion with feeding, play, and persistent progression. |
 | Migrate chat histories from other tools into DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | Full-fidelity import of Claude Code / Codex / ChatGPT / Cursor transcripts (tools + thinking) as resumable DSH sessions. |
+| Change the skin / set a custom wallpaper | [dsh-skin](https://github.com/KinGao294/dsh-skin) | One-click --dsw-alias-* palette switching plus a translucent wallpaper with opacity and blur controls (Codex-style). |
+| Track token usage and costs | [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing) | Auto-bill per message with official pricing (incl. peak/off-peak hours), keep a persistent cost ledger, show the account balance, and switch ¥/$ with the UI language. |
+| Drive Harness from an external agent | [dsh-harness-mcp-server](https://github.com/chushixixin/dsh-harness-mcp-server) | Runs an MCP server inside Harness so any MCP client (e.g. Hermes) can delegate coding tasks to Harness — a 'brain + arms' setup. |
 
 ## New to DSH plugins?
 
@@ -101,18 +104,30 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 
 `desktop pet` `companion` `Web UI`
 
+### [dsh-mneme — memory sovereignty: human-editable cross-session memory](https://github.com/modusensus/dsh-mneme)
+
+SQLite + human-editable Markdown mirror keeps memory transparent — you hold the memory, not the agent. autoDream consolidates in the background; 106 tests back it up.
+
+`memory sovereignty` `cross-session` `autoDream`
+
+### [dsh-TUI — a full-screen terminal UI for DSH](https://github.com/ccch1mneyyy/dsh-TUI)
+
+A Claude Code-style full-screen terminal UI for DSH — pixel-whale header, a live status line, streaming thought expansion, double-Esc rollback, and a context/TPS gauge. One-command npm install, filling the TUI gap for CLI-first users.
+
+`terminal UI` `full-screen` `CLI-first`
+
 ## Recently added
 
 | Project | Description | Created |
 | --- | --- | --- |
-| [KeLearns/dsh-update-checker](https://github.com/KeLearns/dsh-update-checker) | DeepSeek Harness official runtime update checker plugin | 2026-08-14 |
-| [Shmilyol/dsh-skin](https://github.com/Shmilyol/dsh-skin) | No description provided yet. | 2026-08-14 |
-| [hccccc01333/dsh-analytics](https://github.com/hccccc01333/dsh-analytics) | No description provided yet. | 2026-08-14 |
-| [skyzhao1223/dsh-plugin-scaffold](https://github.com/skyzhao1223/dsh-plugin-scaffold) | Minimal runnable DeepSeek Harness (dsh) plugin scaffold: one model-facing tool via ctx.tools | 2026-08-14 |
-| [TheYoungChen/dsh-plugin-market](https://github.com/TheYoungChen/dsh-plugin-market) | DeepSeek Harness plugin market - browse, search & install dsh-plugin topic plugins (dsh 插件市场：浏览/搜索/安装插件) | 2026-08-14 |
-| [Nunchakus888/dsh-turn-budget](https://github.com/Nunchakus888/dsh-turn-budget) | Fail-closed per-turn step, tool-call, and provider-token budgets for DeepSeek Harness | 2026-08-14 |
-| [EvilIrving/dsh-repro](https://github.com/EvilIrving/dsh-repro) | No description provided yet. | 2026-08-14 |
-| [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) | No description provided yet. | 2026-08-14 |
+| [brittanistrehlowll-oss/dsh-quota-panel](https://github.com/brittanistrehlowll-oss/dsh-quota-panel) | Provider quota/balance corner panel for the dsh web surface (DeepSeek Harness plugin): server-side credential proxies plus a config-driven page badge. | 2026-08-14 |
+| [hellosky983/dsh-qrcode](https://github.com/hellosky983/dsh-qrcode) | 离线二维码生成器：DeepSeek Harness 插件，纯本地、零网络、零 shell，给模型一个 qrcode 工具 | 2026-08-14 |
+| [dmsobtl/dsh-session-analyst](https://github.com/dmsobtl/dsh-session-analyst) | No description provided yet. | 2026-08-14 |
+| [sunshine-lang/dsh-plugin-template](https://github.com/sunshine-lang/dsh-plugin-template) | Ready-to-publish DeepSeek Harness plugin skeleton: bundle format, tool DSL, config, tests, and a scaffold script | 2026-08-14 |
+| [aryswisnu/dsh-composition-check](https://github.com/aryswisnu/dsh-composition-check) | Evidence-backed compatibility checks for DeepSeek Harness plugin stacks | 2026-08-14 |
+| [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) | Steam Workshop-style in-app plugin browser for DeepSeek Harness (DSH) Web UI - zero-server: search, hot/newest/trending windows, Chinese keyword search, bilingual translation, plugin-signature filtering, one-click install/update | 2026-08-14 |
+| [dshiq04/dsh-notify](https://github.com/dshiq04/dsh-notify) | 面向deepseek harness的消息通知插件 | 2026-08-14 |
+| [dongsheng123132/dsh-policy-drift-proof](https://github.com/dongsheng123132/dsh-policy-drift-proof) | Content-addressed, value-redacted policy drift evidence for DeepSeek Harness | 2026-08-14 |
 
 ## Why this list?
 
@@ -122,7 +137,7 @@ A draggable DSH Web GUI companion with feeding and play interactions for a littl
 - **Structured and reproducible:** curation lives in [data/curated.json](./data/curated.json), while source metadata lives in [data/repositories.json](./data/repositories.json).
 - **Continuously refreshed:** the catalog updates daily from GitHub's `dsh-plugin` topic. Current data timestamp: **2026-08-14 UTC**.
 
-The index currently covers **913** repositories across **17** primary languages. **764** declare a license, and **912** are neither archived nor disabled.
+The index currently covers **1000** repositories across **18** primary languages. **835** declare a license, and **999** are neither archived nor disabled.
 
 ## Usage and safety
 

@@ -4,12 +4,12 @@
 > 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-913-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-1000-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全部 913 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [浏览全部 1000 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
@@ -26,6 +26,9 @@
 | 给 DSH 增加视觉理解能力 | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 覆盖图片问答、长截图 OCR、UI 还原、定位和像素对比。 |
 | 给工作区增加一个陪伴型宠物 | [whale-girl](https://github.com/vlln/whale-girl) | 可拖拽、投喂和玩耍的积累型鲸鱼娘桌面伙伴。 |
 | 把其他工具的历史会话搬进 DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 全保真导入 Claude Code / Codex / ChatGPT / Cursor 的聊天记录（含工具调用/思考块），导入后可直接续聊。 |
+| 换皮肤、自定义背景 | [dsh-skin](https://github.com/KinGao294/dsh-skin) | 内置多套 --dsw-alias-* 配色一键切换，半透明壁纸支持透明度与模糊调节（Codex 风格）。 |
+| 查看 Token 用量与费用 | [dsh-web-billing](https://github.com/bpc-oss/dsh-web-billing) | 按官方政策自动计价（含峰谷时段），逐条消息记账，显示账号余额；界面语言自动切换人民币/美元。 |
+| 让外部 Agent 驱动 Harness 执行任务 | [dsh-harness-mcp-server](https://github.com/chushixixin/dsh-harness-mcp-server) | 在 Harness 内部启动 MCP server，让任意 MCP 客户端（如 Hermes）下发任务给 Harness 执行，实现「大脑 + 胳膊」协作。 |
 
 ## 第一次使用 DSH 插件？
 
@@ -101,18 +104,30 @@
 
 `桌面宠物` `陪伴` `Web UI`
 
+### [dsh-mneme — 记忆主权还给你：可读可改的跨会话记忆](https://github.com/modusensus/dsh-mneme)
+
+SQLite + 可人工编辑的 Markdown 镜像，记忆不再黑盒；autoDream 后台自动去重/合并/裁决，越用越精炼。106 个测试护航，记忆这回事不该让 agent 一个人说了算。
+
+`记忆主权` `跨会话记忆` `autoDream`
+
+### [dsh-TUI — 给 DSH 补上全屏终端体验](https://github.com/ccch1mneyyy/dsh-TUI)
+
+Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条与 TPS 仪表，npm 一键安装，为偏爱 CLI 的用户补上 DSH 官方尚缺的 TUI 体验。
+
+`终端 TUI` `全屏交互` `CLI 优先`
+
 ## 最近加入生态
 
 | 项目 | 简介 | 创建日期 |
 | --- | --- | --- |
-| [KeLearns/dsh-update-checker](https://github.com/KeLearns/dsh-update-checker) | DeepSeek Harness official runtime update checker plugin | 2026-08-14 |
-| [Shmilyol/dsh-skin](https://github.com/Shmilyol/dsh-skin) | 仓库暂未提供简介。 | 2026-08-14 |
-| [hccccc01333/dsh-analytics](https://github.com/hccccc01333/dsh-analytics) | 仓库暂未提供简介。 | 2026-08-14 |
-| [skyzhao1223/dsh-plugin-scaffold](https://github.com/skyzhao1223/dsh-plugin-scaffold) | Minimal runnable DeepSeek Harness (dsh) plugin scaffold: one model-facing tool via ctx.tools | 2026-08-14 |
-| [TheYoungChen/dsh-plugin-market](https://github.com/TheYoungChen/dsh-plugin-market) | DeepSeek Harness plugin market - browse, search & install dsh-plugin topic plugins (dsh 插件市场：浏览/搜索/安装插件) | 2026-08-14 |
-| [Nunchakus888/dsh-turn-budget](https://github.com/Nunchakus888/dsh-turn-budget) | Fail-closed per-turn step, tool-call, and provider-token budgets for DeepSeek Harness | 2026-08-14 |
-| [EvilIrving/dsh-repro](https://github.com/EvilIrving/dsh-repro) | 仓库暂未提供简介。 | 2026-08-14 |
-| [EvilIrving/dsh-context-proxy](https://github.com/EvilIrving/dsh-context-proxy) | 仓库暂未提供简介。 | 2026-08-14 |
+| [brittanistrehlowll-oss/dsh-quota-panel](https://github.com/brittanistrehlowll-oss/dsh-quota-panel) | Provider quota/balance corner panel for the dsh web surface (DeepSeek Harness plugin): server-side credential proxies plus a config-driven page badge. | 2026-08-14 |
+| [hellosky983/dsh-qrcode](https://github.com/hellosky983/dsh-qrcode) | 离线二维码生成器：DeepSeek Harness 插件，纯本地、零网络、零 shell，给模型一个 qrcode 工具 | 2026-08-14 |
+| [dmsobtl/dsh-session-analyst](https://github.com/dmsobtl/dsh-session-analyst) | 仓库暂未提供简介。 | 2026-08-14 |
+| [sunshine-lang/dsh-plugin-template](https://github.com/sunshine-lang/dsh-plugin-template) | Ready-to-publish DeepSeek Harness plugin skeleton: bundle format, tool DSL, config, tests, and a scaffold script | 2026-08-14 |
+| [aryswisnu/dsh-composition-check](https://github.com/aryswisnu/dsh-composition-check) | Evidence-backed compatibility checks for DeepSeek Harness plugin stacks | 2026-08-14 |
+| [yyyyukari/dsh-plugin-workshop](https://github.com/yyyyukari/dsh-plugin-workshop) | Steam Workshop-style in-app plugin browser for DeepSeek Harness (DSH) Web UI - zero-server: search, hot/newest/trending windows, Chinese keyword search, bilingual translation, plugin-signature filtering, one-click install/update | 2026-08-14 |
+| [dshiq04/dsh-notify](https://github.com/dshiq04/dsh-notify) | 面向deepseek harness的消息通知插件 | 2026-08-14 |
+| [dongsheng123132/dsh-policy-drift-proof](https://github.com/dongsheng123132/dsh-policy-drift-proof) | Content-addressed, value-redacted policy drift evidence for DeepSeek Harness | 2026-08-14 |
 
 ## 为什么维护这个列表？
 
@@ -122,7 +137,7 @@
 - **结构化且可复现：** 推荐配置在 [data/curated.json](./data/curated.json)，原始元数据在 [data/repositories.json](./data/repositories.json)。
 - **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-14 UTC**。
 
-当前索引包含 **913** 个仓库、**17** 种主要语言；其中 **764** 个声明了许可证，**912** 个未归档且未禁用。
+当前索引包含 **1000** 个仓库、**18** 种主要语言；其中 **835** 个声明了许可证，**999** 个未归档且未禁用。
 
 ## 使用与安全
 
