@@ -23,9 +23,9 @@ Thank you for helping maintain Awesome DSH Plugin.
 
 Curated recommendations, scenario navigation, and category overrides live in `data/curated.json`. It is the only file you need to edit by hand; do not modify generated recommendation sections directly.
 
-**只改 `data/curated.json` 的 PR 不要提交生成文件。** `README.md`、`README_EN.md`、`CATALOG.md` 和 `data/repositories.json` 由每日 `update-catalog` 工作流统一刷新；随 PR 附带它们会产生大量噪音 diff，并与自动提交冲突。
+**只改 `data/curated.json` 的 PR 不要提交生成文件。** `README.md`、`README_EN.md`、`CATALOG.md`、`TOP100.md` 和 `data/repositories.json` 由每日 `update-catalog` 工作流统一刷新；随 PR 附带它们会产生大量噪音 diff，并与自动提交冲突。
 
-**Pull requests that only touch `data/curated.json` should not include generated files.** `README.md`, `README_EN.md`, `CATALOG.md`, and `data/repositories.json` are refreshed by the daily `update-catalog` workflow; committing them alongside a curation change creates a large noise diff and conflicts with the automated commit.
+**Pull requests that only touch `data/curated.json` should not include generated files.** `README.md`, `README_EN.md`, `CATALOG.md`, `TOP100.md`, and `data/repositories.json` are refreshed by the daily `update-catalog` workflow; committing them alongside a curation change creates a large noise diff and conflicts with the automated commit.
 
 提交前本地自检 / Check your change locally before submitting:
 
@@ -57,6 +57,6 @@ A newly created repository is younger than the stored `data/repositories.json` s
 
 ## 修改生成逻辑 / Changing the generator
 
-改动 `scripts/` 时，请在 PR 中附带重新生成的 `README.md`、`README_EN.md` 和 `CATALOG.md`，以便审阅者看到输出变化。
+改动 `scripts/` 时，请在 PR 中附带重新生成的 `README.md`、`README_EN.md`、`CATALOG.md` 和 `TOP100.md`，以便审阅者看到输出变化。
 
-When changing `scripts/`, include the regenerated `README.md`, `README_EN.md`, and `CATALOG.md` in the pull request so reviewers can see how the output changes.
+When changing `scripts/`, include the regenerated `README.md`, `README_EN.md`, `CATALOG.md`, and `TOP100.md` in the pull request so reviewers can see how the output changes.

@@ -4,12 +4,12 @@
 > 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-892-2563eb)
+![Plugins](https://img.shields.io/badge/plugins-1123-2563eb)
 ![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全部 892 个插件](./CATALOG.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [浏览全部 1123 个插件](./CATALOG.md) · [Star Top 100](./TOP100.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
@@ -24,7 +24,8 @@
 | 更顺手地阅读和操作长对话 | [dsh-navbar](https://github.com/vlln/dsh-navbar) · [dsh-annotation](https://github.com/omdsh-dev/dsh-annotation) | 快速跳转用户消息节点，并像 Codex 一样选中文本批注。 |
 | 在对话中生成交互式界面 | [dsh-genui](https://github.com/omdsh-dev/dsh-genui) | 在回复中渲染图表、表单、测验、Mermaid 和 3D 场景。 |
 | 让 Agent 操作真实设计画布 | [dsh-openpencil](https://github.com/ZSeven-W/dsh-openpencil) | 创建、编辑、预览和验证可交互的多页面 OpenPencil 设计稿。 |
-| 给 DSH 增加视觉理解能力 | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) | 覆盖图片问答、长截图 OCR、UI 还原、定位和像素对比；纯文本模型也可以通过 Luna 转写桥接继续处理图片。 |
+| 给 DSH 增加视觉理解能力 | [dsh-vision-toolkit](https://github.com/Anionex/dsh-vision-toolkit) · [dsh-luna-vision-bridge](https://github.com/ycp424c/dsh-luna-vision-bridge) | 覆盖图片问答、长截图 OCR、UI 还原、定位和像素对比；纯文本模型也可以通过 Luna 转写桥接继续处理图片。 |
+| 在开发对话里直接检查和操作当前网页 | [dsh-browser-bridge](https://github.com/ycp424c/dsh-browser-bridge) | 把完整 DSH Web 嵌进 Chrome 侧边栏，按 prompt 显式授权当前标签页，DSH 能在同一对话里读取 DOM、样式、console 报错并操作页面，无需另开浏览器专用对话。 |
 | 给工作区增加一个陪伴型宠物 | [whale-girl](https://github.com/vlln/whale-girl) | 可拖拽、投喂和玩耍的积累型鲸鱼娘桌面伙伴。 |
 | 把其他工具的历史会话搬进 DSH | [dsh-chat-import](https://github.com/Nwflower/dsh-chat-import) | 全保真导入 Claude Code / Codex / ChatGPT / Cursor 的聊天记录（含工具调用/思考块），导入后可直接续聊。 |
 | 换皮肤、自定义背景 | [dsh-skin](https://github.com/KinGao294/dsh-skin) | 内置多套 --dsw-alias-* 配色一键切换，半透明壁纸支持透明度与模糊调节（Codex 风格）。 |
@@ -133,14 +134,14 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 
 | 项目 | 简介 | 创建日期 |
 | --- | --- | --- |
+| [mbj733/dsh-hermes-memory](https://github.com/mbj733/dsh-hermes-memory) | DSH (DeepSeek Harness) agent preset + plugin: Hermes-style cross-session memory & autonomous skill learning. | 2026-08-14 |
+| [SnowAmberX/dsh-role-router](https://github.com/SnowAmberX/dsh-role-router) | Role-based model routing plugin for DeepSeek Harness: planner/subagent roles plus a settings card and composer summary | 2026-08-14 |
+| [Yee-h/dsh-zen-proxy](https://github.com/Yee-h/dsh-zen-proxy) | dsh plugin: in-process proxy that injects official OpenCode Zen client headers, enabling Zen free models in dsh without the 429 FreeUsageLimitError | 2026-08-14 |
+| [khiqwq/dsh-credentials-system](https://github.com/khiqwq/dsh-credentials-system) | System-bound encrypted credential provider for DeepSeek Harness | 2026-08-14 |
+| [CodePrometheus/dsh-observability](https://github.com/CodePrometheus/dsh-observability) | Observability for DeepSeek Harness (dsh), use the OpenTelemetry Protocol | 2026-08-14 |
+| [mixin-ai/dsh-file-changes](https://github.com/mixin-ai/dsh-file-changes) | DeepSeek Harness web plugin: per-turn file-change panel with diff viewing and filesystem reveal | 2026-08-14 |
+| [pineapple880066/dsh-desktop-pets](https://github.com/pineapple880066/dsh-desktop-pets) | Codex-style desktop pets for DeepSeek Harness (dsh-plugin) | 2026-08-14 |
 | [sherconan/dsh-web-recon](https://github.com/sherconan/dsh-web-recon) | 网页系统侦察 · DeepSeek Harness 插件：摸清一个网页系统怎么运作，只摸一次。抓真实接口与可访问性树，固化成可复用的作战手册。零依赖，不用 Playwright。 | 2026-08-14 |
-| [dmsobtl/dsh-skill-evolve](https://github.com/dmsobtl/dsh-skill-evolve) | DSH 插件：Agent 自我进化引擎 — 从成功会话中自动提炼可复用 skill，越用越聪明。 | 2026-08-14 |
-| [237229953-create/dsh-vision](https://github.com/237229953-create/dsh-vision) | DSH plugin: text-only models (e.g. DeepSeek-V4) automatically see images via a vision model. Official surface-replace, cache-friendly, human transcript untouched. 纯文本模型自动识图桥 | 2026-08-14 |
-| [SisyphusSQ/dsh-plugins](https://github.com/SisyphusSQ/dsh-plugins) | A monorepo for composable DeepSeek Harness (DSH) plugins. | 2026-08-14 |
-| [lanshuye123/DSH-Terminal](https://github.com/lanshuye123/DSH-Terminal) | DSH WebUI 终端(Terminal)插件。可以在WebUI中获得终端模拟器。 | 2026-08-14 |
-| [dmsobtl/dsh-tool-backtest](https://github.com/dmsobtl/dsh-tool-backtest) | DSH 插件：策略回测引擎 — 定义买卖信号，跑历史数据，输出绩效指标。 | 2026-08-14 |
-| [djh2203/dsh-refined](https://github.com/djh2203/dsh-refined) | DeepSeek-Refined 的 DeepSeek Harness 移植版 为 DeepSeek Harness（DSH）前端注入 Obsidian Border 风格的 Markdown 美化与多主题配色。 | 2026-08-14 |
-| [dongsheng123132/dsh-audit-bundle](https://github.com/dongsheng123132/dsh-audit-bundle) | Content-addressed audit indexes across independent DeepSeek Harness evidence producers | 2026-08-14 |
 
 ## 为什么维护这个列表？
 
@@ -150,7 +151,7 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 - **结构化且可复现：** 推荐配置在 [data/curated.json](./data/curated.json)，原始元数据在 [data/repositories.json](./data/repositories.json)。
 - **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-14 UTC**。
 
-当前索引包含 **892** 个仓库、**19** 种主要语言；其中 **759** 个声明了许可证，**890** 个未归档且未禁用。
+当前索引包含 **1123** 个仓库、**19** 种主要语言；其中 **942** 个声明了许可证，**1121** 个未归档且未禁用。
 
 ## 使用与安全
 
