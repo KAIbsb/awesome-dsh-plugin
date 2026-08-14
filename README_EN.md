@@ -242,7 +242,7 @@ Hand-picked recent additions, updated from time to time:
 - **Bilingual by design:** Chinese is the default, with an independent English entry point.
 - **Automated data, hand-maintained pages:** the catalog and raw snapshot refresh daily; the home-page recommendations and rankings are edited by hand against [data/repositories.json](./data/repositories.json), so polluted API data (star inflation, topic riders) never rewrites this page directly.
 
-As of 2026-08-14, the full catalog covers **1026** repositories across **16** primary languages; **861** declare a license, and **1024** are neither archived nor disabled (these counts refresh daily — see [CATALOG.md](./CATALOG.md) for the current numbers).
+As of 2026-08-14, the full catalog covers **1761** repositories across **17** primary languages; **1486** declare a license, and **1758** are neither archived nor disabled (the catalog refreshes daily — see [CATALOG.md](./CATALOG.md) for the current numbers).
 
 ## Usage and safety
 
