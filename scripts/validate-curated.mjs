@@ -2,9 +2,13 @@
 
 // Validates data/curated.json before it reaches main.
 //
-// Repository references are checked against the live GitHub API rather than
-// data/repositories.json: the stored snapshot always lags behind, so a freshly
-// submitted repository would otherwise look invalid.
+// category_overrides references are checked against the live GitHub API rather
+// than data/repositories.json: the stored snapshot always lags behind, so a
+// freshly submitted repository would otherwise look invalid. Archived or
+// disabled repositories are not flagged — they stay listed in the catalog with
+// their status, and their overrides remain meaningful. The exclusion list is
+// intentionally not checked against the API: entries may be deleted or renamed,
+// and keeping them out of the catalog by name is still correct.
 
 import { readFile } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
@@ -14,6 +18,7 @@ import { categoryKeys } from './categories.mjs';
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const errors = [];
 const validCategories = new Set(categoryKeys);
+const ownerRepoPattern = /^[\w.-]+\/[\w.-]+$/;
 
 let curated;
 try {
@@ -23,36 +28,25 @@ try {
   process.exit(1);
 }
 
-for (const [fullName, category] of Object.entries(curated.category_overrides || {})) {
-  if (!validCategories.has(category)) {
-    errors.push(`category_overrides["${fullName}"]: unknown category "${category}" (valid: ${categoryKeys.join(', ')})`);
-  }
-}
-
 const referenced = new Set();
 
-function checkEntry(entry, label, fields) {
-  for (const field of fields) {
-    const value = entry[field];
-    if (value === undefined || value === null || value === '' || (Array.isArray(value) && !value.length)) {
-      errors.push(`${label}: missing or empty "${field}"`);
-    }
+for (const [fullName, category] of Object.entries(curated.category_overrides || {})) {
+  if (!ownerRepoPattern.test(fullName)) {
+    errors.push(`category_overrides key "${fullName}" is not a valid owner/repo reference`);
+    continue;
   }
-  for (const fullName of entry.repos || (entry.repo ? [entry.repo] : [])) {
-    if (typeof fullName !== 'string' || !/^[\w.-]+\/[\w.-]+$/.test(fullName)) {
-      errors.push(`${label}: "${fullName}" is not a valid owner/repo reference`);
-      continue;
-    }
-    referenced.add(fullName);
+  if (!validCategories.has(category)) {
+    errors.push(`category_overrides["${fullName}"]: unknown category "${category}" (valid: ${categoryKeys.join(', ')})`);
+    continue;
   }
+  referenced.add(fullName);
 }
 
-(curated.scenarios || []).forEach((item, index) =>
-  checkEntry(item, `scenarios[${index}]`, ['goal_zh', 'goal_en', 'why_zh', 'why_en', 'repos']));
-(curated.starter_kits || []).forEach((kit, index) =>
-  checkEntry(kit, `starter_kits[${index}]`, ['title_zh', 'title_en', 'summary_zh', 'summary_en', 'repos']));
-(curated.editor_picks || []).forEach((pick, index) =>
-  checkEntry(pick, `editor_picks[${index}]`, ['repo', 'title_zh', 'title_en', 'summary_zh', 'summary_en', 'labels_zh', 'labels_en']));
+for (const fullName of Object.keys(curated.excluded_repos || {})) {
+  if (!ownerRepoPattern.test(fullName)) {
+    errors.push(`excluded_repos key "${fullName}" is not a valid owner/repo reference`);
+  }
+}
 
 const headers = {
   Accept: 'application/vnd.github+json',
@@ -79,10 +73,8 @@ await Promise.all([...referenced].map(async (fullName) => {
   }
   const repo = await response.json();
   if (repo.private) errors.push(`${fullName}: repository is private`);
-  if (repo.archived) errors.push(`${fullName}: repository is archived`);
-  if (repo.disabled) errors.push(`${fullName}: repository is disabled`);
   if (!(repo.topics || []).includes('dsh-plugin')) {
-    errors.push(`${fullName}: missing the "dsh-plugin" topic, so it never enters the catalog snapshot`);
+    errors.push(`${fullName}: missing the "dsh-plugin" topic, so the override never applies`);
   }
   if (repo.full_name.toLowerCase() !== fullName.toLowerCase()) {
     errors.push(`${fullName}: repository was renamed to "${repo.full_name}" — update the reference`);
@@ -95,4 +87,4 @@ if (errors.length) {
   process.exit(1);
 }
 
-console.log(`data/curated.json is valid — ${referenced.size} referenced repositories checked against the GitHub API.`);
+console.log(`data/curated.json is valid — ${referenced.size} category-override repositories checked against the GitHub API.`);

@@ -4,12 +4,11 @@
 > 不只是仓库列表：这里告诉你插件解决什么问题、适合谁，以及从哪里开始。
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-1026-2563eb)
-![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
+![Repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbruc3van%2Fawesome-dsh-plugin%2Fmain%2Fdata%2Frepositories.json&query=%24.total_count&label=repositories&color=2563eb)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[English](./README_EN.md) · [浏览全部 1026 个插件](./CATALOG.md) · [Star Top 100](./TOP100.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
+[English](./README_EN.md) · [浏览全量目录](./CATALOG.md) · [Star Top 100](./TOP100.md) · [推荐一个插件](./CONTRIBUTING.md) · [机器可读数据](./data/repositories.json)
 
 **如果这个列表帮你找到一个有用的插件，欢迎点一个 Star ⭐。它能帮助更多 DSH 用户发现这个生态。**
 
@@ -202,7 +201,7 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 
 ## 社区热度榜（Star 排序）
 
-按 Star 自动排序、每天随目录刷新，已剔除 97 个蹭 `dsh-plugin` Topic 的非插件仓库。完整 Top 100 见 [TOP100.md](./TOP100.md)。
+按 Star 排序的社区热度参考，经人工复核后不定期更新；蹭 `dsh-plugin` Topic 的非插件仓库已剔除（清单见 [data/curated.json](./data/curated.json)）。完整榜单见 [TOP100.md](./TOP100.md)；排名反映受欢迎程度，不代表质量、兼容性或安全背书。
 
 | # | 项目 | ⭐ Stars | License | 更新 |
 | ---: | --- | ---: | --- | --- |
@@ -221,6 +220,8 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 
 ## 最近加入生态
 
+人工筛选的近期新项目，不定期更新：
+
 | 项目 | 简介 | 创建日期 |
 | --- | --- | --- |
 | [mbj733/dsh-hermes-memory](https://github.com/mbj733/dsh-hermes-memory) | DSH (DeepSeek Harness) agent preset + plugin: Hermes-style cross-session memory & autonomous skill learning. | 2026-08-14 |
@@ -238,10 +239,9 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 - **人工推荐 + 全量索引：** 首页提供选择建议，[CATALOG.md](./CATALOG.md) 保留完整 Topic 快照。
 - **剔除蹭热度条目：** 带 `dsh-plugin` Topic 但并非 DSH 插件的仓库（平台本体、其他 Agent 工具、同名目录站等）不计入目录与榜单，理由记录在 [data/curated.json](./data/curated.json)。
 - **中文默认，中英双语：** 普通用户可以直接理解，英文读者也有独立入口。
-- **结构化且可复现：** 推荐配置在 [data/curated.json](./data/curated.json)，原始元数据在 [data/repositories.json](./data/repositories.json)。
-- **持续更新：** 目录每天从 GitHub `dsh-plugin` Topic 自动刷新；当前数据时间为 **2026-08-14 UTC**。
+- **数据自动、页面人工：** 全量目录与原始快照每天自动刷新；首页推荐与榜单由人工参考 [data/repositories.json](./data/repositories.json) 复核后修改，避免刷星、蹭 Topic 等被污染的接口数据直接改写本页。
 
-当前索引包含 **1026** 个仓库、**16** 种主要语言；其中 **861** 个声明了许可证，**1024** 个未归档且未禁用。
+截至 2026-08-14，全量目录收录 **1026** 个仓库、**16** 种主要语言；其中 **861** 个声明了许可证，**1024** 个未归档且未禁用（以上统计每日自动更新，以 [CATALOG.md](./CATALOG.md) 为准）。
 
 ## 使用与安全
 
@@ -249,7 +249,7 @@ Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工�
 
 ## 推荐或修正插件
 
-发现遗漏、分类不准确或说明过时？欢迎提交 Issue 或 Pull Request。公开仓库只要带有 `dsh-plugin` Topic 且确实是 DSH 插件，就会进入全量目录（蹭 Topic 的条目会被剔除）；编辑推荐需要补充清晰的使用场景和中英文理由。详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
+发现遗漏、分类不准确或说明过时？欢迎提交 Issue 或 Pull Request。公开仓库只要带有 `dsh-plugin` Topic 且确实是 DSH 插件，就会自动进入全量目录（蹭 Topic 的条目会被剔除）；首页的场景推荐、编辑推荐与榜单为人工维护页面，修改请直接编辑对应 Markdown 并附上理由。详见 [CONTRIBUTING.md](./CONTRIBUTING.md)。
 
 ## License
 

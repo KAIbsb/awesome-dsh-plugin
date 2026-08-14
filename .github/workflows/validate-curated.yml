@@ -26,5 +26,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: node scripts/validate-curated.mjs
-      - name: Rebuild pages from the stored snapshot
+      - name: Rebuild the catalog page from the stored snapshot
         run: node scripts/update.mjs --from-snapshot

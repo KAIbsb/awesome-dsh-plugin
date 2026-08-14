@@ -4,12 +4,11 @@
 > More than a repository dump: learn what each plugin solves, who it is for, and where to start.
 
 [![Awesome](https://awesome.re/badge-flat2.svg)](https://awesome.re)
-![Plugins](https://img.shields.io/badge/plugins-1026-2563eb)
-![Updated](https://img.shields.io/badge/updated-2026--08--14-16a34a)
+![Repositories](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fbruc3van%2Fawesome-dsh-plugin%2Fmain%2Fdata%2Frepositories.json&query=%24.total_count&label=repositories&color=2563eb)
 [![Catalog refresh](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml/badge.svg)](https://github.com/bruc3van/awesome-dsh-plugin/actions/workflows/update-catalog.yml)
 ![License](https://img.shields.io/badge/license-MIT-f59e0b)
 
-[中文](./README.md) · [Browse all 1026 plugins](./CATALOG.md) · [Star Top 100](./TOP100.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
+[中文](./README.md) · [Browse the full catalog](./CATALOG.md) · [Star Top 100](./TOP100.md) · [Recommend a plugin](./CONTRIBUTING.md) · [Machine-readable data](./data/repositories.json)
 
 **If this list helps you discover something useful, consider leaving a Star ⭐ so more DSH users can find the ecosystem.**
 
@@ -202,7 +201,7 @@ Auto-resumes turns that failed to network hiccups, timeouts, or host crashes by 
 
 ## Popular by stars
 
-Ranked by stars and refreshed daily with the catalog; the 97 repositories that ride the `dsh-plugin` topic without being DSH plugins are excluded. Full Top 100: [TOP100.md](./TOP100.md).
+A community-popularity reference ranked by stars and updated manually after review; repositories that ride the `dsh-plugin` topic without being DSH plugins are excluded (see [data/curated.json](./data/curated.json)). Full ranking: [TOP100.md](./TOP100.md). Ranking reflects popularity only — not a claim of quality, compatibility, or safety.
 
 | # | Project | ⭐ Stars | License | Updated |
 | ---: | --- | ---: | --- | --- |
@@ -221,6 +220,8 @@ Ranked by stars and refreshed daily with the catalog; the 97 repositories that r
 
 ## Recently added
 
+Hand-picked recent additions, updated from time to time:
+
 | Project | Description | Created |
 | --- | --- | --- |
 | [mbj733/dsh-hermes-memory](https://github.com/mbj733/dsh-hermes-memory) | DSH (DeepSeek Harness) agent preset + plugin: Hermes-style cross-session memory & autonomous skill learning. | 2026-08-14 |
@@ -238,10 +239,9 @@ Ranked by stars and refreshed daily with the catalog; the 97 repositories that r
 - **Human guidance plus complete coverage:** the home page helps you choose; [CATALOG.md](./CATALOG.md) preserves the full topic snapshot.
 - **Topic riders excluded:** repositories that tag `dsh-plugin` without being DSH plugins (the platform itself, other agent tools, competing catalogs) are left out of the catalog and rankings, with reasons recorded in [data/curated.json](./data/curated.json).
 - **Bilingual by design:** Chinese is the default, with an independent English entry point.
-- **Structured and reproducible:** curation lives in [data/curated.json](./data/curated.json), while source metadata lives in [data/repositories.json](./data/repositories.json).
-- **Continuously refreshed:** the catalog updates daily from GitHub's `dsh-plugin` topic. Current data timestamp: **2026-08-14 UTC**.
+- **Automated data, hand-maintained pages:** the catalog and raw snapshot refresh daily; the home-page recommendations and rankings are edited by hand against [data/repositories.json](./data/repositories.json), so polluted API data (star inflation, topic riders) never rewrites this page directly.
 
-The index currently covers **1026** repositories across **16** primary languages. **861** declare a license, and **1024** are neither archived nor disabled.
+As of 2026-08-14, the full catalog covers **1026** repositories across **16** primary languages; **861** declare a license, and **1024** are neither archived nor disabled (these counts refresh daily — see [CATALOG.md](./CATALOG.md) for the current numbers).
 
 ## Usage and safety
 
@@ -249,7 +249,7 @@ Third-party plugins may access conversations, files, networks, or system resourc
 
 ## Recommend or correct a plugin
 
-Found a missing project, stale description, or incorrect category? Issues and pull requests are welcome. Public repositories carrying the `dsh-plugin` topic enter the full catalog automatically if they actually are DSH plugins (topic riders are excluded); editor's picks require a clear use case and bilingual rationale. See [CONTRIBUTING.md](./CONTRIBUTING.md).
+Found a missing project, stale description, or incorrect category? Issues and pull requests are welcome. Public repositories carrying the `dsh-plugin` topic enter the full catalog automatically if they actually are DSH plugins (topic riders are excluded); the home page's scenarios, editor's picks, and rankings are hand-maintained pages — edit the corresponding Markdown directly and include your rationale. See [CONTRIBUTING.md](./CONTRIBUTING.md).
 
 ## License
 
