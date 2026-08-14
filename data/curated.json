@@ -226,6 +226,15 @@
       "summary_en": "A Claude Code-style full-screen terminal UI for DSH — pixel-whale header, a live status line, streaming thought expansion, double-Esc rollback, and a context/TPS gauge. One-command npm install, filling the TUI gap for CLI-first users.",
       "labels_zh": ["终端 TUI", "全屏交互", "CLI 优先"],
       "labels_en": ["terminal UI", "full-screen", "CLI-first"]
+    },
+    {
+      "repo": "zhu1090093659/dsh-web-ui",
+      "title_zh": "dsh-web-ui — DSH Web UI 插件与皮肤合集",
+      "title_en": "dsh-web-ui — a plugin and skin bundle for the DSH Web UI",
+      "summary_zh": "一站式功能合集：任务看板、Git 关系图、侧边面板、远程移动端界面、桌面宠物、实时 Token 用量统计与皮肤中心，一次安装覆盖多个常见的界面与体验诉求。",
+      "summary_en": "An all-in-one bundle for the DSH Web UI — task board, git graph, a side panel, a remote mobile UI, a desktop pet, live token stats, and a skin center — covering several common UI needs in a single install.",
+      "labels_zh": ["功能合集", "皮肤中心", "移动端"],
+      "labels_en": ["all-in-one", "skin center", "mobile UI"]
     }
 ]
 }

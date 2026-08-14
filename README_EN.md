@@ -123,6 +123,12 @@ A Claude Code-style full-screen terminal UI for DSH — pixel-whale header, a li
 
 `terminal UI` `full-screen` `CLI-first`
 
+### [dsh-web-ui — a plugin and skin bundle for the DSH Web UI](https://github.com/zhu1090093659/dsh-web-ui)
+
+An all-in-one bundle for the DSH Web UI — task board, git graph, a side panel, a remote mobile UI, a desktop pet, live token stats, and a skin center — covering several common UI needs in a single install.
+
+`all-in-one` `skin center` `mobile UI`
+
 ## Recently added
 
 | Project | Description | Created |
