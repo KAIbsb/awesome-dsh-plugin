@@ -8,7 +8,8 @@
     "vlln/whale-girl": "ui-experience",
     "Nwflower/dsh-chat-import": "integrations-sharing",
     "KinGao294/dsh-skin": "ui-experience",
-    "bpc-oss/dsh-web-billing": "ui-experience"
+    "bpc-oss/dsh-web-billing": "ui-experience",
+    "ccch1mneyyy/dsh-TUI": "ui-experience"
   },
   "scenarios": [
     {
@@ -200,6 +201,15 @@
       "summary_en": "SQLite + human-editable Markdown mirror keeps memory transparent — you hold the memory, not the agent. autoDream consolidates in the background; 106 tests back it up.",
       "labels_zh": ["记忆主权", "跨会话记忆", "autoDream"],
       "labels_en": ["memory sovereignty", "cross-session", "autoDream"]
+    },
+    {
+      "repo": "ccch1mneyyy/dsh-TUI",
+      "title_zh": "dsh-TUI — 给 DSH 补上全屏终端体验",
+      "title_en": "dsh-TUI — a full-screen terminal UI for DSH",
+      "summary_zh": "Claude Code 风格的全屏交互终端插件：像素鲸鱼顶栏、实时工作状态行、思考流式展开、双击 Esc 回滚、上下文进度条与 TPS 仪表，npm 一键安装，为偏爱 CLI 的用户补上 DSH 官方尚缺的 TUI 体验。",
+      "summary_en": "A Claude Code-style full-screen terminal UI for DSH — pixel-whale header, a live status line, streaming thought expansion, double-Esc rollback, and a context/TPS gauge. One-command npm install, filling the TUI gap for CLI-first users.",
+      "labels_zh": ["终端 TUI", "全屏交互", "CLI 优先"],
+      "labels_en": ["terminal UI", "full-screen", "CLI-first"]
     }
 ]
 }
