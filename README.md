@@ -210,6 +210,7 @@ mindmap
 - **[dsh-memory-gate](https://github.com/GIT121995/dsh-memory-gate)**（[@GIT121995](https://github.com/GIT121995) · 2026-08-14）— 「检索到≠注入」的本地长期记忆：每条记忆须通过 CBDC 四段权威门控才进入上下文，输出可解释的 use/verify/ignore 决策并保留审计日志；默认每次最多注入 3 条、1200 字符，不增加第二次模型调用。
 - **[dsh-lark-meeting-notifier](https://github.com/yeruizhi/dsh-lark-meeting-notifier)**（[@yeruizhi](https://github.com/yeruizhi) · 2026-08-14）— 飞书会议提醒悬浮框：展示今日/明日会议、多闹钟闪烁提醒，在你跟 AI 聊得忘我时提醒「该去跟碳基生命开会了」。
 - **[dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)**（[@dhicoc](https://github.com/dhicoc) · 2026-08-14）— 85 个 SKILL.md 组成的逆向工程、授权渗透测试与安全研究技能包，安装后按任务自动路由对应技能。
+- **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)**（[@ysr666](https://github.com/ysr666) · 2026-08-14）— 给纯文本 DSH Agent 装上眼睛：内置免 key 视觉链路（匿名端点）+ 像素级工具集（问答/定位/裁剪/像素对比/取色/OCR/SVG 描摹/抠图/截图），无需 Python，一条命令安装，图片回合像普通工具调用回合一样工作。注意：默认匿名端点会把图片发往第三方，介意隐私请自行配置端点。
 
 ## 🔍 我们如何维护这个列表
 
