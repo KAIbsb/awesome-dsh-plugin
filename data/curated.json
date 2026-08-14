@@ -10,7 +10,9 @@
     "KinGao294/dsh-skin": "ui-experience",
     "bpc-oss/dsh-web-billing": "ui-experience",
     "Han-1413141/dsh-cost-meter": "ui-experience",
-    "ccch1mneyyy/dsh-TUI": "ui-experience"
+    "ccch1mneyyy/dsh-TUI": "ui-experience",
+    "flymysql/dsh-remote": "integrations-sharing",
+    "howlma/dsh-desktop": "ui-experience"
   },
   "excluded_repos": {
     "AdamPlatin123/awesome-dsh-plugins": "Not a DSH plugin — a competing/duplicate plugin-catalog site that tags itself with the dsh-plugin topic."
@@ -50,6 +52,13 @@
       "repos": ["vlln/dsh-loop", "fuhefei/dsh-sentinel"],
       "why_zh": "覆盖周期任务，以及文件、命令、HTTP、进程和 Webhook 事件。",
       "why_en": "Cover scheduled runs plus file, command, HTTP, process, and webhook events."
+    },
+    {
+      "goal_zh": "请求经常因网络波动或超时中断，不想每次都手动补一句「继续」",
+      "goal_en": "Keep requests from dying to network hiccups and timeouts without manually saying \"continue\" every time",
+      "repos": ["HsiangNianian/dsh-auto-continue"],
+      "why_zh": "监听实时事件流，回合因非人为原因失败后自动补发「继续」：错误分类只恢复临时性故障，自适应退避避免对故障上游狂轰滥炸，支持模板化继续文本与浏览器通知，参数可在插件设置卡片中调整。",
+      "why_en": "Watches the live event streams and auto-sends a queued \"继续\" after non-human failures: error classification resumes only transient faults, adaptive backoff avoids hammering a broken upstream, and templated continue text plus browser notifications keep you in the loop — all configurable from the plugin settings card."
     },
     {
       "goal_zh": "更顺手地阅读和操作长对话",
@@ -120,6 +129,13 @@
       "repos": ["chushixixin/dsh-harness-mcp-server"],
       "why_zh": "在 Harness 内部启动 MCP server，让任意 MCP 客户端（如 Hermes）下发任务给 Harness 执行，实现「大脑 + 胳膊」协作。",
       "why_en": "Runs an MCP server inside Harness so any MCP client (e.g. Hermes) can delegate coding tasks to Harness — a 'brain + arms' setup."
+    },
+    {
+      "goal_zh": "从外部设备安全访问本机 Harness",
+      "goal_en": "Access your local Harness securely from another device",
+      "repos": ["flymysql/dsh-remote"],
+      "why_zh": "打印当前实例的精确连接命令：SSH 本地转发、autossh 保活、反向隧道（NAT 友好）与带 --trusted-host 的反向代理，设置页一键复制；遵循官方安全设计，不碰 0.0.0.0。",
+      "why_en": "Prints the exact commands for the live instance — SSH local forward, autossh keepalive, NAT-friendly reverse tunnel, and reverse-proxy access with --trusted-host — with one-click copy from the settings page. Respects the official safety design: no 0.0.0.0 hacks."
     }
   ],
   "starter_kits": [
@@ -253,6 +269,15 @@
       "summary_en": "An all-in-one bundle for the DSH Web UI — task board, git graph, a side panel, a remote mobile UI, a desktop pet, live token stats, and a skin center — covering several common UI needs in a single install.",
       "labels_zh": ["功能合集", "皮肤中心", "移动端"],
       "labels_en": ["all-in-one", "skin center", "mobile UI"]
+    },
+    {
+      "repo": "HsiangNianian/dsh-auto-continue",
+      "title_zh": "dsh-auto-continue — 请求中断后自动「继续」",
+      "title_en": "dsh-auto-continue — auto-resume interrupted requests",
+      "summary_zh": "网络波动、超时或宿主崩溃导致回合失败后，自动向会话发送「继续」续跑：错误分类（认证/余额等永久性错误跳过）、自适应退避、模板化继续文本与浏览器通知，全部可在插件设置卡片中调整，无人值守也能自己爬起来。",
+      "summary_en": "Auto-resumes turns that failed to network hiccups, timeouts, or host crashes by sending a queued \"继续\": error classification skips permanent failures, adaptive backoff spaces out retries, continue text supports templates, and browser notifications keep you informed — all configurable from the plugin settings card.",
+      "labels_zh": ["自动续跑", "无人值守", "错误分类"],
+      "labels_en": ["auto-resume", "unattended", "error classification"]
     }
 ]
 }
