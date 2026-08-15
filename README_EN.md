@@ -212,6 +212,7 @@ Self-submitted recommendations from plugin authors, following the [contributing 
 - **[dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)** ([@dhicoc](https://github.com/dhicoc) · 2026-08-14) — A pack of 85 SKILL.md files covering reverse engineering, authorized pentesting, and security research, routed on demand.
 - **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)** ([@ysr666](https://github.com/ysr666) · 2026-08-14) — Eyes for text-only DSH agents: a built-in keyless vision chain plus pixel-level tools (Q&A, grounding, crop, pixel diff, colors, OCR, SVG trace, cutout, screenshots) — no Python, one-command install, and image turns behave like ordinary tool-calling turns. Note: the default anonymous endpoint sends images to a third party — configure your own endpoint if that matters to you.
 
+- **[dsh-tray](https://github.com/KAIbsb/dsh-tray)** ([@KAIbsb](https://github.com/KAIbsb) · 2026-08-15) — A Windows tray manager for DSH Web: one-click start/restart/stop, crash auto-restart, whale status icon, and autostart — pairs nicely with a browser app-mode window.
 ## 🔍 How this list is maintained
 
 - **Built for users, not crawlers:** the front page is organized around "what I want to get done", not hundreds of repo names.
