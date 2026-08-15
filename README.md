@@ -213,6 +213,7 @@ mindmap
 - **[dsh-reverse-skill](https://github.com/dhicoc/dsh-reverse-skill)**（[@dhicoc](https://github.com/dhicoc) · 2026-08-14）— 85 个 SKILL.md 组成的逆向工程、授权渗透测试与安全研究技能包，安装后按任务自动路由对应技能。
 - **[dsh-vision-router](https://github.com/ysr666/dsh-vision-router)**（[@ysr666](https://github.com/ysr666) · 2026-08-14）— 给纯文本 DSH Agent 装上眼睛：内置免 key 视觉链路（匿名端点）+ 像素级工具集（问答/定位/裁剪/像素对比/取色/OCR/SVG 描摹/抠图/截图），无需 Python，一条命令安装，图片回合像普通工具调用回合一样工作。注意：默认匿名端点会把图片发往第三方，介意隐私请自行配置端点。
 - **[dsh-web-open](https://github.com/dawsondx/dsh-web-open)**（[@dawsondx](https://github.com/dawsondx) · 2026-08-14）— `dsh web` 冷启动（实测本机约 25 秒）期间零手动操作：服务一就绪，完整链接自动打印、浏览器自动打开直达 GUI，不用盯终端、不用复制 URL；跨平台、零运行时依赖、故障安全。
+- **[dsh-rigorquant](https://github.com/linxichen/dsh-rigorquant)**（[@linxichen](https://github.com/linxichen) · 2026-08-14）— 无人值守实证/计算数学研究框架：隔离多智能体探索 + 双轨真值推导 + 仅反例淘汰的对抗审计；实现前跑四重校验（闭式解相等、精确不变量、解析界、统计强化），固定种子大数定律约定，jacobian/Lean 升级通道处理证明关键断言。
 
 ## 🔍 我们如何维护这个列表
 
